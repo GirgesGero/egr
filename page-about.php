@@ -7,34 +7,60 @@
  */
 
 get_header();
+$theme_uri = get_template_directory_uri();
 ?>
 
 <main class="site-main page-interior-main">
-    <!-- Hero Banner -->
-    <section class="page-hero-banner" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.9)), url('<?php echo esc_url( get_template_directory_uri() . '/assets/images/district1-elevation-front-hd.jpg' ); ?>') center/cover no-repeat;">
+
+    <!-- 1. Hero Banner with Panoramic Glassmorphic Presentation -->
+    <section class="page-hero-banner about-hero-banner" style="background: linear-gradient(135deg, rgba(10, 17, 40, 0.92) 0%, rgba(30, 58, 138, 0.88) 100%), url('<?php echo esc_url( $theme_uri . '/assets/images/district1-elevation-front-hd.jpg' ); ?>') center/cover no-repeat;">
         <div class="site-container">
             <div class="section-badge luxury-badge-glow">
                 <span class="badge-dot-cyan-pulsing"></span>
-                <span>نبذة عن المجموعة // EGR Real Estate Group</span>
+                <span>المجموعة الاقتصادية للاستثمار // EGR Real Estate Group</span>
             </div>
-            <h1 class="page-hero-title">المجموعة الاقتصادية للاستثمار <span class="cyan-text">(EGR)</span></h1>
+            <h1 class="page-hero-title">
+                نصنع المستقبل العمراني ونقود <span class="cyan-text">التحول الاستثماري بصعيد مصر</span>
+            </h1>
             <p class="page-hero-subtitle">
-                صُنّاع المستقبل العمراني في صعيد مصر — رواد تطوير المشروعات التجارية والإدارية الذكية، والمطور الرسمي لصرح <strong>District 1</strong> في قلب مدينة قنا.
+                المطور العقاري الرائد لصرح <strong>District 1</strong> الأيقوني في قلب مدينة قنا — ندمج المعايير المعمارية العالمية مع الاستدامة والتكنولوجيا الذكية لخلق قيمة متصاعدة لشركائنا ومستثمرينا.
             </p>
-            <div style="margin-top: 1.8rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+
+            <!-- Quick KPI Ribbon Bar -->
+            <div class="about-hero-kpi-ribbon">
+                <div class="about-kpi-box glass-panel">
+                    <span class="about-kpi-num num-font">3,200 م²</span>
+                    <span class="about-kpi-label">مساحة أرض الصرح</span>
+                </div>
+                <div class="about-kpi-box glass-panel">
+                    <span class="about-kpi-num num-font">21,667 م²</span>
+                    <span class="about-kpi-label">إجمالي المساحة البنائية</span>
+                </div>
+                <div class="about-kpi-box glass-panel">
+                    <span class="about-kpi-num num-font">33.6 متراً</span>
+                    <span class="about-kpi-label">الارتفاع المعماري (9 طوابق)</span>
+                </div>
+                <div class="about-kpi-box glass-panel">
+                    <span class="about-kpi-num num-font">1,500+</span>
+                    <span class="about-kpi-label">فرصة عمل مباشرة وغير مباشرة</span>
+                </div>
+            </div>
+
+            <div class="about-hero-actions">
                 <button class="btn-cyan open-vip-modal">
                     <i class="fa-solid fa-gem"></i>
-                    <span>حجز استشارة مع الإدارة</span>
+                    <span>حجز استشارة VIP مع الإدارة</span>
                 </button>
-                <a href="<?php echo esc_url( home_url( '/district1/' ) ); ?>" class="btn-outline-cyan" style="color: #ffffff; border-color: rgba(255, 255, 255, 0.3);">
+                <a href="<?php echo esc_url( home_url( '/district1/' ) ); ?>" class="btn-outline-glass">
                     <i class="fa-solid fa-building"></i>
-                    <span>مشروع ديستركت 1</span>
+                    <span>استكشف صرح District 1</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 1. Executive Leadership Spotlight (صُنّاع النهضة ورؤية التطوير) -->
+
+    <!-- 2. Executive Leadership Spotlight (السيد ياسر أحمد سليمان - رئيس مجلس الإدارة) -->
     <section class="theme-section executive-leadership-section">
         <div class="site-container">
             <div class="section-title-wrap text-center-wrap" style="margin-bottom: 3.5rem;">
@@ -55,7 +81,7 @@ get_header();
                 <!-- Portrait Column -->
                 <div class="leader-portrait-col">
                     <div class="leader-img-frame executive-frame-glow">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/eng-yasser-soliman.jpg' ); ?>" alt="السيد ياسر أحمد سليمان - رئيس مجلس إدارة المجموعة الاقتصادية للاستثمار" class="leader-portrait">
+                        <img src="<?php echo esc_url( $theme_uri . '/assets/images/eng-yasser-soliman.jpg' ); ?>" alt="السيد ياسر أحمد سليمان - رئيس مجلس إدارة المجموعة الاقتصادية للاستثمار" class="leader-portrait">
                         <div class="leader-badge-overlay">
                             <span class="badge-dot-cyan-pulsing"></span>
                             <span>رئيس مجلس الإدارة والمؤسس</span>
@@ -71,6 +97,10 @@ get_header();
                         <div class="meta-item">
                             <i class="fa-solid fa-handshake-simple" style="color: #0284c7;"></i>
                             <span>شراكات استراتيجية مع كبرى بيوت الخبرة</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-award" style="color: #10b981;"></i>
+                            <span>المطور العقاري لصرح District 1</span>
                         </div>
                     </div>
                 </div>
@@ -134,111 +164,333 @@ get_header();
                             <i class="fa-solid fa-gem"></i>
                             <span>حجز استشارة VIP مع الإدارة</span>
                         </button>
-                        <button class="btn-outline-cyan open-vip-modal">
-                            <i class="fa-solid fa-file-pdf"></i>
-                            <span>تحميل البروفايل الاستثماري الكامل</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2. Corporate Pillars (قيم وركائز المجموعة) -->
-            <div class="about-company-grid" style="margin-top: 5rem;">
-                <div class="about-info-col">
-                    <span class="section-badge luxury-badge-glow"><span class="badge-dot-cyan-pulsing"></span> ركائز وقيم المجموعة</span>
-                    <h3 class="section-title luxury-main-title">رؤية استثمارية تنموية <span class="cyan-text">تبني مستقبلاً مستداماً</span></h3>
-                    <p class="section-desc" style="margin-bottom: 2rem;">
-                        تأسست المجموعة الاقتصادية للاستثمار برؤية واضحة تهدف إلى إحداث نقلة نوعية في المشروعات العقارية متعددة الاستخدامات في صعيد مصر من خلال الالتزام بأعلى المعايير.
-                    </p>
-                    <div class="about-highlights-grid">
-                        <div class="highlight-item glass-panel">
-                            <i class="fa-solid fa-gem highlight-icon"></i>
-                            <div>
-                                <h4>معايير معمارية عالمية</h4>
-                                <p>تطبيق أحدث أكواد البناء والواجهات الزجاجية المزدوجة العازلة وحجر الترافرتين الطبيعي.</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item glass-panel">
-                            <i class="fa-solid fa-handshake-angle highlight-icon"></i>
-                            <div>
-                                <h4>التزام ومصداقية تعاقدية</h4>
-                                <p>الالتزام التام بالجداول الزمنية المحددة والمواصفات الإنشائية المعتمدة للتسليم في أكتوبر 2028.</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item glass-panel">
-                            <i class="fa-solid fa-chart-line highlight-icon"></i>
-                            <div>
-                                <h4>قيمة استثمارية متصاعدة</h4>
-                                <p>اختيار مواقع استراتيجية حيوية في قلب المدن تضمن أعلى عوائد إيجارية ونمو رأسمالي مستدام.</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item glass-panel">
-                            <i class="fa-solid fa-users highlight-icon"></i>
-                            <div>
-                                <h4>تنمية مجتمعية وشراكات</h4>
-                                <p>خلق بيئة أعمال متكاملة تدعم رواد الأعمال وتوفر فرص عمل واعدة لكوادر الصعيد.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-img-col">
-                    <div class="about-img-card glass-panel">
-                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/district1-elevation-front-hd.jpg' ); ?>" alt="District 1 Architecture" class="about-primary-img">
-                        <div class="about-img-overlay">
-                            <h4 style="color: #fff; font-weight: 800; margin: 0 0 0.3rem;">صرح District 1 بقلب قنا</h4>
-                            <p style="color: #cbd5e1; font-size: 0.85rem; margin: 0;">أول صرح تجاري وإداري وطبي وترفيهي ذكي بمساحة بنائية 21,667 م² وارتفاع 33.6 متراً.</p>
-                        </div>
+                        <a href="https://wa.me/201040022670?text=<?php echo rawurlencode('مرحباً، أود حجز موعد استشارة استثمارية مع إدارة المجموعة الاقتصادية للاستثمار EGR بخصوص صرح District 1'); ?>" target="_blank" class="btn-outline-cyan">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>محادثة فورية مع المستشار</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Sectors & Investment Fields (قطاعات أعمال EGR) -->
-    <section class="theme-section" style="background-color: var(--bg-secondary);">
+
+    <!-- 3. Vision, Mission & Strategic Pillars (الرؤية والرسالة والأهداف الاستراتيجية) -->
+    <section class="theme-section vision-mission-section" style="background-color: var(--bg-secondary);">
+        <div class="site-container">
+            <div class="section-title-wrap text-center-wrap">
+                <div class="section-badge luxury-badge-glow">
+                    <span class="badge-dot-cyan-pulsing"></span>
+                    <span>الرؤية والرسالة والقيم الجوهرية</span>
+                </div>
+                <h2 class="section-title luxury-main-title">
+                    ركائز استراتيجية <span class="cyan-text">تبني مستقبلاً مستداماً</span>
+                </h2>
+                <p class="section-desc luxury-sub-desc">
+                    تستند فلسفة المجموعة الاقتصادية للاستثمار على أسس متينة تجمع بين الجدوى الاقتصادية، الابتكار المعماري، والأثر المجتمعي العميق.
+                </p>
+            </div>
+
+            <!-- Vision / Mission / Values 3-Card Master Layout -->
+            <div class="about-pillars-grid">
+                <!-- Pillar 1: Vision -->
+                <div class="about-pillar-card glass-panel">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="pillar-title">رؤيتنـــــا</h3>
+                    <p class="pillar-desc">
+                        أن نكون المجموعة الاستثمارية والتطويرية الأولى والأكثر موثوقية في صعيد مصر، ونموذجاً يُحتذى به في ابتكار الصروح التجارية والإدارية الذكية متعددة الاستخدامات التي ترتقي بجودة الحياة وتفتح آفاقاً رحبة لنمو قطاع الأعمال.
+                    </p>
+                    <ul class="pillar-checklist">
+                        <li><i class="fa-solid fa-check"></i> ريادة التطوير العقاري الذكي بالصعيد</li>
+                        <li><i class="fa-solid fa-check"></i> بناء صروح معمارية مستدامة للأجيال القادمة</li>
+                        <li><i class="fa-solid fa-check"></i> توطين الاستثمارات الوطنية في قلب قنا</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Mission -->
+                <div class="about-pillar-card glass-panel pillar-highlighted">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="pillar-title">رسالتنـــــا</h3>
+                    <p class="pillar-desc">
+                        تطوير وتشييد مساحات تجارية وإدارية وترفيهية استثنائية وفق أعلى معايير الجودة العالمية، تضمن لشركائنا ومستثمرينا أعلى عائد استثماري، وتقدم للمواطنين بيئة تسوق وعمل عصرية تلبي كافة احتياجاتهم اليومية.
+                    </p>
+                    <ul class="pillar-checklist">
+                        <li><i class="fa-solid fa-check"></i> الالتزام التام بالمواصفات والجداول الزمنية</li>
+                        <li><i class="fa-solid fa-check"></i> تقديم حلول هندسية وتشغيلية تضمن أعلى ربحية</li>
+                        <li><i class="fa-solid fa-check"></i> توفير خدمات وتجارب تسوق غير مسبوقة</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3: Core Values -->
+                <div class="about-pillar-card glass-panel">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="pillar-title">قيمنا الراسخة</h3>
+                    <p class="pillar-desc">
+                        مبادئ حاكمة توجه كافة قراراتنا الاستثمارية وعلاقاتنا مع العملاء والشركاء لضمان المصداقية والتميز المستدام.
+                    </p>
+                    <ul class="pillar-checklist">
+                        <li><i class="fa-solid fa-check"></i> <strong>المصداقية:</strong> شفافية مطلقة والتزام تعاقدي صارم</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>الابتكار:</strong> تصاميم معمارية فريدة وتقنيات ذكية</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>الاستدامة:</strong> كفاءة الطاقة ومواد بناء بيئية متقدمة</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>الشراكة:</strong> نجاح مستثمرينا هو مقياس نجاحنا الأول</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. The 4 Titans Behind District 1 (تحالف العمالقة الأربعة وراء صرح ديستركت 1) -->
+    <section class="theme-section alliance-section">
+        <div class="site-container">
+            <div class="section-title-wrap text-center-wrap">
+                <div class="section-badge luxury-badge-glow">
+                    <span class="badge-dot-cyan-pulsing"></span>
+                    <span>وراء كل نجاح .. رؤية وخبرات عملاقة</span>
+                </div>
+                <h2 class="section-title luxury-main-title">
+                    تحالف العمالقة الأربعة // <span class="cyan-text">صُنّاع صرح District 1</span>
+                </h2>
+                <p class="section-desc luxury-sub-desc">
+                    يقف وراء صرح District 1 تحالف استراتيجي رائد يجمع بين قوة التطوير والاستثمار، وخبرة أربعة عقود في الاستشارات المعمارية، وريادة المقاولات العامة، ودقة الهندسة الإنشائية المعتمدة.
+                </p>
+            </div>
+
+            <div class="alliance-grid">
+                <!-- Titan 1: EGR -->
+                <div class="alliance-card glass-panel">
+                    <div class="alliance-header">
+                        <div class="alliance-icon"><i class="fa-solid fa-building-shield"></i></div>
+                        <span class="alliance-role">المطور العقاري والمستثمر الرئيسي</span>
+                    </div>
+                    <h3 class="alliance-name">المجموعة الاقتصادية للاستثمار – EGR</h3>
+                    <div class="alliance-leader">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>المؤسس: السيد ياسر أحمد سليمـان</span>
+                    </div>
+                    <p class="alliance-desc">
+                        تُعد من الأسماء الموثوقة والرائدة في مجال التطوير العقاري وإدارة الأصول بصعيد مصر. تمتلك محفظة استثمارية متوازنة تشمل قطاعات العقارات، والأغذية والمشروبات، وتشغيل المرافق والمنشآت متعددة الاستخدامات.
+                    </p>
+                    <div class="alliance-tags">
+                        <span>التطوير العقاري</span>
+                        <span>إدارة الأصول</span>
+                        <span>الأغذية والمشروبات</span>
+                        <span>صرح District 1</span>
+                    </div>
+                </div>
+
+                <!-- Titan 2: MCG -->
+                <div class="alliance-card glass-panel">
+                    <div class="alliance-header">
+                        <div class="alliance-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <span class="alliance-role">الاستشاري العام والمصمم المعماري</span>
+                    </div>
+                    <h3 class="alliance-name">إم سي جي – مجموعة مروان للاستشارات (MCG)</h3>
+                    <div class="alliance-leader">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>الرئيس: المهندس المعماري طارق حسين</span>
+                    </div>
+                    <p class="alliance-desc">
+                        تمتلك الشركة أكثر من <strong>أربعة عقود من الخبرة</strong> العريقة في مجالات العمارة، والتصميم الداخلي، وإدارة المشروعات الكبرى، مما جعلها اسماً مرجعياً موثوقاً في كبرى الصروح المعمارية والتجارية في مصر والشرق الأوسط.
+                    </p>
+                    <div class="alliance-tags">
+                        <span>+40 عاماً خبرة</span>
+                        <span>التصميم المعماري</span>
+                        <span>الهندسة المتكاملة</span>
+                        <span>إدارة المشروعات</span>
+                    </div>
+                </div>
+
+                <!-- Titan 3: SCC -->
+                <div class="alliance-card glass-panel">
+                    <div class="alliance-header">
+                        <div class="alliance-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                        <span class="alliance-role">المقاول العام والتنفيذي للمشروع</span>
+                    </div>
+                    <h3 class="alliance-name">شركة الصعيد العامة للمقاولات – SCC</h3>
+                    <div class="alliance-leader">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <span>المقاول العام المعتمد للصرح</span>
+                    </div>
+                    <p class="alliance-desc">
+                        إحدى كبرى قلاع التشييد والمقاولات في صعيد مصر. يمتد نطاق أعمالها ليشمل المقاولات العامة والخاصة، البنية التحتية، المرافق العامة، إدارة واستخراج مواد البناء، وتشغيل المحاجر، وإنشاء المصانع والورش الداعمة للمشروعات القومية.
+                    </p>
+                    <div class="alliance-tags">
+                        <span>المقاولات العامة</span>
+                        <span>البنية التحتية</span>
+                        <span>المحاجر والمصانع</span>
+                        <span>تنفيذ دقيق</span>
+                    </div>
+                </div>
+
+                <!-- Titan 4: SEKKAN -->
+                <div class="alliance-card glass-panel">
+                    <div class="alliance-header">
+                        <div class="alliance-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <span class="alliance-role">الاستشاري الإنشائي الهندسي للمشروع</span>
+                    </div>
+                    <h3 class="alliance-name">مكتب سكن للاستشارات الهندسية (SEKKAN)</h3>
+                    <div class="alliance-leader">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>الرئيس: أ.د. حداد سعيد حداد</span>
+                    </div>
+                    <p class="alliance-desc">
+                        تأسس على يد الأستاذ الدكتور <strong>حداد سعيد حداد</strong>، أحد كبار الخبراء المرموقين في <strong>المركز القومي لبحوث الإسكان والبناء</strong>، ويتميز بخبرة علمية وفنية عميقة في حسابات الأحمال الزلزالية والهندسة الإنشائية المتقدمة.
+                    </p>
+                    <div class="alliance-tags">
+                        <span>الاستشارات الإنشائية</span>
+                        <span>بحوث الإسكان والبناء</span>
+                        <span>كود الزلازل والأحمال</span>
+                        <span>الأمان الهيكلي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. EGR Business Sectors & Portfolio (قطاعات ومجالات أعمال المجموعة) -->
+    <section class="theme-section sectors-section" style="background-color: var(--bg-secondary);">
         <div class="site-container">
             <div class="section-title-wrap text-center-wrap">
                 <div class="section-badge luxury-badge-glow">
                     <span class="badge-dot-cyan-pulsing"></span>
                     <span>تنوع المحفظة الاستثمارية</span>
                 </div>
-                <h2 class="section-title luxury-main-title">قطاعات ومجالات <span class="cyan-text">أعمال المجموعة الاقتصادية</span></h2>
+                <h2 class="section-title luxury-main-title">
+                    قطاعات ومجالات <span class="cyan-text">أعمال المجموعة الاقتصادية (EGR)</span>
+                </h2>
                 <p class="section-desc luxury-sub-desc">
-                    محفظة استثمارية متوازنة تجمع بين التميز في التطوير العقاري وريادة قطاع الأغذية والمشروبات وإدارة المرافق.
+                    محفظة استثمارية متكاملة تتوزع عبر قطاعات حيوية تحقق التكامل وتضمن أعلى كفاءة تشغيلية وعوائد مالية متنامية.
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
-                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-building"></i></div>
-                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">التطوير العقاري والتجاري</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
-                        تطوير الصروح والمجمعات متعددة الاستخدامات بمواصفات المدن الذكية، وتوفير مساحات للمحلات، المكاتب، والعيادات.
+            <div class="sectors-grid">
+                <!-- Sector 1 -->
+                <div class="sector-card glass-panel">
+                    <div class="sector-icon-wrap"><i class="fa-solid fa-building"></i></div>
+                    <h3 class="sector-title">التطوير العقاري والتجاري الذكي</h3>
+                    <p class="sector-desc">
+                        تطوير الصروح متعددة الاستخدامات (Commercial & Mixed-Use Hubs) بمواصفات المدن الذكية، وتوفير وحدات تجارية، إدارية، ومصرفية بمعايير عالمية.
                     </p>
+                    <div class="sector-features">
+                        <span><i class="fa-solid fa-check"></i> واجهات كواسر شمسية وحجر ترافرتين</span>
+                        <span><i class="fa-solid fa-check"></i> إدارة التدفق الجماهيري وانسيابية الحركة</span>
+                    </div>
                 </div>
 
-                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
-                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-utensils"></i></div>
-                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">الأغذية والمشروبات (F&B)</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
-                        استقطاب وتشغيل أرقى سلاسل المطاعم والكافيهات العالمية، وتجهيز مساحات طعام راقية وشرفات معلقة في قلب قنا.
+                <!-- Sector 2 -->
+                <div class="sector-card glass-panel">
+                    <div class="sector-icon-wrap"><i class="fa-solid fa-utensils"></i></div>
+                    <h3 class="sector-title">قطاع الأغذية والمشروبات والضيافة (F&B)</h3>
+                    <p class="sector-desc">
+                        استقطاب وتشغيل أرقى سلاسل المطاعم والكافيهات العالمية والمحلية، وتجهيز مساحات طعام فاخرة وشرفات معلقة بانورامية في قلب صعيد مصر.
                     </p>
+                    <div class="sector-features">
+                        <span><i class="fa-solid fa-check"></i> مجمع مطاعم عبر 3 طوابق حيوية</span>
+                        <span><i class="fa-solid fa-check"></i> مناطق جلوس مفتوحة بإطلالات ساحرة</span>
+                    </div>
                 </div>
 
-                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
-                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-solar-panel"></i></div>
-                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">إدارة الأصول والمرافق (BMS)</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
-                        إدارة المباني الذكية وصيانتها باستخدام أحدث نظم BMS، وأنظمة المراقبة الأمنية والتحكم في الطاقة والمواقف 24/7.
+                <!-- Sector 3 -->
+                <div class="sector-card glass-panel">
+                    <div class="sector-icon-wrap"><i class="fa-solid fa-solar-panel"></i></div>
+                    <h3 class="sector-title">إدارة الأصول والمرافق الذكية (BMS)</h3>
+                    <p class="sector-desc">
+                        إدارة المباني وصيانتها بأحدث نظم إدارة المباني الذكية (Building Management Systems)، والمراقبة الأمنية الذكية، والتحكم في الطاقة 24/7.
                     </p>
+                    <div class="sector-features">
+                        <span><i class="fa-solid fa-check"></i> جراجات ذكية بمساحة 6,000 م²</span>
+                        <span><i class="fa-solid fa-check"></i> كاميرات ومصاعد بانورامية وتكييف مركزي</span>
+                    </div>
+                </div>
+
+                <!-- Sector 4 -->
+                <div class="sector-card glass-panel">
+                    <div class="sector-icon-wrap"><i class="fa-solid fa-landmark"></i></div>
+                    <h3 class="sector-title">المقرات المصرفية والطبية التخصصية</h3>
+                    <p class="sector-desc">
+                        تجهيز مساحات بنكية مخصصة تتوافق مع اشتراطات البنك المركزي المصري (186 - 329 م²)، بالإضافة لعيادات ومراكز طبية مجهزة بأعلى معايير السلامة.
+                    </p>
+                    <div class="sector-features">
+                        <span><i class="fa-solid fa-check"></i> بوابات أمنية وخزائن مصرفية مصفحة</span>
+                        <span><i class="fa-solid fa-check"></i> مداخل خاصة ومستقلة للإداري والطبي</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Contact CTA -->
+
+    <!-- 6. Timeline to Handover October 2028 (مسيرة التشييد والالتزام الزمني) -->
+    <section class="theme-section timeline-commitment-section">
+        <div class="site-container">
+            <div class="section-title-wrap text-center-wrap">
+                <div class="section-badge luxury-badge-glow">
+                    <span class="badge-dot-cyan-pulsing"></span>
+                    <span>الجدول الزمني المعتمد للتسليم</span>
+                </div>
+                <h2 class="section-title luxury-main-title">
+                    مسيرة الإنجاز الميداني // <span class="cyan-text">التسليم أكتوبر 2028</span>
+                </h2>
+                <p class="section-desc luxury-sub-desc">
+                    خطة تنفيذية صارمة تضمن الالتزام التام بمواعيد التسليم وفق أعلى معايير الجودة والرقابة الهندسية.
+                </p>
+            </div>
+
+            <div class="about-timeline-steps">
+                <div class="about-step-card glass-panel completed">
+                    <div class="step-num">01</div>
+                    <div class="step-icon"><i class="fa-solid fa-stamp"></i></div>
+                    <h4>التراخيص والتصميمات</h4>
+                    <p>اعتماد المخططات المعمارية والإنشائية من كبرى بيوت الخبرة والحصول على كافة التراخيص الرسمية.</p>
+                    <span class="step-status"><i class="fa-solid fa-check-circle"></i> مكتمل بالكامل</span>
+                </div>
+
+                <div class="about-step-card glass-panel completed">
+                    <div class="step-num">02</div>
+                    <div class="step-icon"><i class="fa-solid fa-trowel"></i></div>
+                    <h4>أعمال الحفر والأساسات</h4>
+                    <p>تنفيذ أعمال الحفر العميق لـ 2 بدروم (6,000 م²) وصب الأساسات الخرسانية المقاومة للزلازل والمياه الجوفية.</p>
+                    <span class="step-status"><i class="fa-solid fa-check-circle"></i> مكتمل بالكامل</span>
+                </div>
+
+                <div class="about-step-card glass-panel in-progress">
+                    <div class="step-num">03</div>
+                    <div class="step-icon"><i class="fa-solid fa-building"></i></div>
+                    <h4>الهيكل الخرساني والبوديوم</h4>
+                    <p>تشييد طوابق المول التجاري والأبراج الإدارية حتى الارتفاع النهائي 33.6 متراً.</p>
+                    <span class="step-status active"><i class="fa-solid fa-spinner fa-spin"></i> جارٍ التنفيذ الميداني</span>
+                </div>
+
+                <div class="about-step-card glass-panel upcoming">
+                    <div class="step-num">04</div>
+                    <div class="step-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>الواجهات والأنظمة الكهروميكانيكية</h4>
+                    <p>تركيب كواسر الشمس المزدوجة، حجر الترافرتين، التكييف المركزي، وشبكات الـ BMS والمصاعد البانورامية.</p>
+                    <span class="step-status"><i class="fa-solid fa-clock"></i> الربع الأول 2028</span>
+                </div>
+
+                <div class="about-step-card glass-panel upcoming target-grand">
+                    <div class="step-num">05</div>
+                    <div class="step-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h4>التسليم والافتتاح الرسمي</h4>
+                    <p>تسليم الوحدات للملاك والبدء في تشغيل الهايبر ماركت والبراندات العالمية والمقرات الإدارية.</p>
+                    <span class="step-status gold"><i class="fa-solid fa-star"></i> أكتوبر 2028</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Interactive VIP Contact CTA -->
     <?php get_template_part( 'template-parts/section-contact' ); ?>
+
 </main>
 
 <?php

@@ -17,7 +17,8 @@ if ( ! headers_sent() ) {
 <body <?php body_class( ! is_front_page() ? 'interior-page' : '' ); ?>>
 <?php wp_body_open(); ?>
 
-<!-- Luxury 3D Holographic Architectural Preloader -->
+<?php if ( is_front_page() ) : ?>
+<!-- Luxury 3D Holographic Architectural Preloader (Front Page Only) -->
 <div id="site-preloader" class="site-preloader">
     <div class="preloader-content">
         <!-- Official EGR Logo -->
@@ -55,6 +56,7 @@ if ( ! headers_sent() ) {
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <!-- Luxury Glassmorphic Navbar (Always Visible, Responsive & Elegant) -->
 <header id="site-header" class="site-header">

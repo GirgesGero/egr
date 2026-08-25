@@ -1,80 +1,111 @@
 <?php
 /**
  * Template Part: Strategic Location & Connectivity Hub (Heart of Qena City)
+ * Bespoke Human Storytelling & Investor Objection-Handling Logic
+ *
+ * @package District1
  */
+$theme_uri = get_template_directory_uri();
 ?>
 <section id="location-section" class="theme-section location-section">
     <div class="site-container">
+        <!-- Section Header -->
         <div class="section-title-wrap text-center-wrap">
             <div class="section-badge luxury-badge-glow">
                 <span class="badge-dot-cyan-pulsing"></span>
                 <span>الموقع الاستراتيجي الأكثر تميزاً</span>
             </div>
             <h2 class="section-title luxury-main-title">
-                في قلب قنا <span class="cyan-text">حيث تلتقي شرايين الحركة والحياة</span>
+                في قلب قنا النابض <span class="cyan-text">حيث تلتقي شرايين الاستثمار والحياة</span>
             </h2>
             <p class="section-desc luxury-sub-desc">
-                يقع صرح District 1 في النقطة الأكثر حيوية بكثافة سكانية وحركة تجارية لا تتوقف، على بُعد دقائق من كافة المصالح الحكومية والجامعة والمحاور الرئيسية.
+                اختيار موقع District 1 لم يكن صدفة؛ بل استند إلى دراسة تدفق مروري واقتصادي عميقة استهدفت النقطة الأعلى كثافة ورواجاً في صعيد مصر، مع حل جذري لمعضلة مواقف السيارات.
             </p>
         </div>
 
-        <div class="location-grid">
-            <!-- 1. Right Column: Landmarks & Distance Badges -->
-            <div class="location-landmarks">
-                <div class="landmark-box">
-                    <div class="landmark-icon"><i class="fa-solid fa-train-subway"></i></div>
-                    <div class="landmark-content">
-                        <h4 class="landmark-title">محطة قطارات قنا وميدان المحطة</h4>
-                        <p class="landmark-sub">3 دقائق فقط — أعلى كثافة ركاب وتدفق يومي بالمحافظة</p>
+        <div class="location-grid-v2">
+            <!-- 1. Right Column: Strategic Landmark Proximity Matrix -->
+            <div class="location-landmarks-v2">
+                <div class="landmark-card-v2">
+                    <div class="landmark-icon-wrap">
+                        <i class="fa-solid fa-train-subway"></i>
                     </div>
-                    <span class="landmark-distance-pill">3 دقائق</span>
+                    <div class="landmark-info">
+                        <div class="landmark-head-row">
+                            <h4 class="landmark-title">ميدان ومحطة قطارات قنا الرئيسية</h4>
+                            <span class="landmark-time-chip">3 دقائق فقط</span>
+                        </div>
+                        <p class="landmark-desc">
+                            شريان الربط مع كافة محافظات الصعيد والقاهرة، مع أعلى معدل تدفق يومي للركاب والمتسوقين يتجاوز 45,000 زائر يومياً.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="landmark-box">
-                    <div class="landmark-icon"><i class="fa-solid fa-landmark-dome"></i></div>
-                    <div class="landmark-content">
-                        <h4 class="landmark-title">ديوان عام محافظة قنا والمجمع الحكومي</h4>
-                        <p class="landmark-sub">5 دقائق — مركز القرار والمصالح الإدارية والوزارات</p>
+                <div class="landmark-card-v2">
+                    <div class="landmark-icon-wrap">
+                        <i class="fa-solid fa-landmark-dome"></i>
                     </div>
-                    <span class="landmark-distance-pill">5 دقائق</span>
+                    <div class="landmark-info">
+                        <div class="landmark-head-row">
+                            <h4 class="landmark-title">ديوان عام محافظة قنا والمجمع الحكومي</h4>
+                            <span class="landmark-time-chip">5 دقائق فقط</span>
+                        </div>
+                        <p class="landmark-desc">
+                            مركز اتخاذ القرار والمصالح الإدارية والوزارات والبنوك المركزية، مما يضمن تدفقاً مستمراً للمكاتب الإدارية والعيادات.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="landmark-box">
-                    <div class="landmark-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="landmark-content">
-                        <h4 class="landmark-title">جامعة جنوب الوادي والمستشفيات الجامعية</h4>
-                        <p class="landmark-sub">8 دقائق — مجتمع أكاديمي ضخم يضم أكثر من 60 ألف طالب وموظف</p>
+                <div class="landmark-card-v2">
+                    <div class="landmark-icon-wrap">
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-                    <span class="landmark-distance-pill">8 دقائق</span>
+                    <div class="landmark-info">
+                        <div class="landmark-head-row">
+                            <h4 class="landmark-title">جامعة جنوب الوادي والمستشفيات الجامعية</h4>
+                            <span class="landmark-time-chip">8 دقائق فقط</span>
+                        </div>
+                        <p class="landmark-desc">
+                            مجتمع أكاديمي وبحثي ضخم يضم أكثر من 65,000 طالب وأكاديمي وموظف، يشكلون القوة الشرائية الأقوى للعلامات التجارية والمطاعم.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="landmark-box">
-                    <div class="landmark-icon"><i class="fa-solid fa-water"></i></div>
-                    <div class="landmark-content">
-                        <h4 class="landmark-title">كورنيش النيل والمناطق الترفيهية</h4>
-                        <p class="landmark-sub">4 دقائق — أرقى المناطق الترفيهية والسياحية بالمدينة</p>
+                <div class="landmark-card-v2">
+                    <div class="landmark-icon-wrap">
+                        <i class="fa-solid fa-water"></i>
                     </div>
-                    <span class="landmark-distance-pill">4 دقائق</span>
+                    <div class="landmark-info">
+                        <div class="landmark-head-row">
+                            <h4 class="landmark-title">كورنيش النيل والممشى السياحي الترفيهي</h4>
+                            <span class="landmark-time-chip">4 دقائق فقط</span>
+                        </div>
+                        <p class="landmark-desc">
+                            الوجهة الترفيهية الأولى للعائلات والنزهات المسائية، مما يجعل صرح District 1 المحطة الطبيعية للتسوق وتناول الطعام.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <!-- 2. Left Column: Location Visual Card with Radar Pin -->
-            <div class="map-card-wrapper">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/district1-elevation-front-hd.jpg' ); ?>" alt="District 1 Location Facade" class="location-facade-img">
-                <div class="location-card-glass-overlay">
-                    <div class="location-radar-pin">
-                        <div class="radar-dot"></div>
-                        <span class="radar-label">موقع المشروع الرسمي: قلب مدينة قنا</span>
+            <!-- 2. Left Column: Interactive Visual Showcase & Parking Solution Highlight -->
+            <div class="location-visual-card-v2">
+                <div class="location-img-wrap">
+                    <img src="<?php echo esc_url( $theme_uri . '/assets/images/district1-elevation-front-hd.jpg' ); ?>" alt="District 1 Architectural Location" class="location-facade-img-v2">
+                    <div class="location-live-radar-badge">
+                        <span class="radar-pulsing-circle"></span>
+                        <span class="radar-title-text">الموقع المعتمد: تقاطع الشرايين الحيوية – قلب قنا</span>
                     </div>
-                    <div class="location-summary-card">
-                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.5rem;">
-                            <i class="fa-solid fa-location-dot" style="color: #38bdf8; font-size: 1.3rem;"></i>
-                            <h4 style="color: #ffffff; font-weight: 900; font-size: 1.15rem; margin: 0;">DISTRICT 1 — QENA CITY CENTER</h4>
-                        </div>
-                        <p style="color: #cbd5e1; font-size: 0.88rem; margin: 0; line-height: 1.6;">
-                            التقاء الشوارع الحيوية الأكثر رواجاً مع حل جذري لمواقف السيارات بمساحة 6,000 م² على مستويين تحت الأرض.
-                        </p>
+                </div>
+
+                <div class="location-feature-bottom-card">
+                    <div class="feature-badge-row">
+                        <span class="feature-tag-cyan"><i class="fa-solid fa-square-parking"></i> حل أزمة المواقف</span>
+                        <span class="feature-tag-gold"><i class="fa-solid fa-shield-halved"></i> أمان وحراسة 24/7</span>
                     </div>
+                    <h3 class="feature-box-title">6,000 م² مواقف سيارات تحت الأرض (B1 + B2)</h3>
+                    <p class="feature-box-desc">
+                        تغلبنا على العائق الأكبر في وسط المدينة بتوفير طابقين كاملين لمواقف السيارات الذكية تسع مئات المركبات مع نظام توجيه إلكتروني ذكي، ليتمتع زوارك وعملاؤك بتجربة وصول مريحة وممتعة دون أي عناء.
+                    </p>
                 </div>
             </div>
         </div>

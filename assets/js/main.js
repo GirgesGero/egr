@@ -6,6 +6,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
+  // 0. Universal Fail-Safe Preloader Dismiss (Instant on Interior Pages)
+  const sitePreloader = document.getElementById('site-preloader');
+  if (sitePreloader) {
+    const isFrontPageWithScrubber = !!document.getElementById('hero-frame-canvas');
+    if (!isFrontPageWithScrubber) {
+      const pBar = document.getElementById('preloader-bar');
+      const pCount = document.getElementById('preloader-count');
+      if (pBar) pBar.style.width = '100%';
+      if (pCount) pCount.textContent = '100%';
+      setTimeout(() => {
+        sitePreloader.classList.add('loaded');
+        setTimeout(() => {
+          sitePreloader.style.display = 'none';
+        }, 300);
+      }, 100);
+    } else {
+      setTimeout(() => {
+        if (!sitePreloader.classList.contains('loaded')) {
+          sitePreloader.classList.add('loaded');
+          setTimeout(() => {
+            sitePreloader.style.display = 'none';
+          }, 300);
+        }
+      }, 2500);
+    }
+  }
+
   // 1. Ultra-Lightweight & Fluid Lenis Smooth Scroll Engine
   let lenis = null;
   if (typeof Lenis !== 'undefined') {
@@ -147,4 +174,31 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 6. Investor FAQ Accordion Interactive Logic
+  const faqItems = document.querySelectorAll('.faq-item-card');
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question-btn');
+    if (questionBtn) {
+      questionBtn.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        // Close all other items for clean single-focus accordion behavior
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            const otherBtn = otherItem.querySelector('.faq-question-btn');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+        // Toggle current item
+        if (isActive) {
+          item.classList.remove('active');
+          questionBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('active');
+          questionBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
 });
