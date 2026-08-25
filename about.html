@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن — EGR للاستثمار العقاري | District 1 — EGR للاستثمار العقاري</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800;900&family=Outfit:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<!-- 3D Holographic Architectural Construction Preloader -->
+<!-- Luxury 3D Holographic Architectural Preloader -->
+<div id="site-preloader" class="site-preloader">
+    <div class="preloader-content">
+        <img src="assets/images/egr-logo.png" alt="EGR Investments" class="preloader-logo">
+        
+        <div class="preloader-3d-viewport">
+            <canvas id="preloader-3d-canvas"></canvas>
+            <div class="laser-scanner-line"></div>
+            
+            <div id="holo-tag-top" class="holo-callout holo-callout-top">
+                <span class="dot"></span>
+                <span>الارتفاع: 33.6 متراً</span>
+            </div>
+            <div id="holo-tag-mid" class="holo-callout holo-callout-mid">
+                <span class="dot"></span>
+                <span>المباني: 21,667 م²</span>
+            </div>
+            <div id="holo-tag-bot" class="holo-callout holo-callout-bot">
+                <span class="dot"></span>
+                <span>المواقف: 6,000 م²</span>
+            </div>
+        </div>
+
+        <div class="preloader-progress-wrap">
+            <div id="preloader-bar" class="preloader-progress-bar"></div>
+        </div>
+
+        <div class="preloader-status-row">
+            <div class="preloader-phase-tag">
+                <span class="badge-dot-cyan"></span>
+                <span id="preloader-phase-text">جاري تشييد الأساسات العميقة ومواقف السيارات...</span>
+            </div>
+            <span id="preloader-count" class="preloader-counter num-font">0%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header id="site-header" class="site-header">
+    <div class="site-container header-inner">
+        <div class="header-brand">
+            <a href="index.html" class="brand-link">
+                <img src="assets/images/egr-logo.png" alt="EGR Real Estate" class="brand-logo">
+            </a>
+            <div class="brand-divider"></div>
+            <div class="brand-badge-wrap">
+                <span class="brand-tag">DISTRICT 1</span>
+                <span class="brand-subtag">قلب قنا</span>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="district1.html" class="nav-link">مشروع ديستركت 1</a></li>
+                                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-cyan open-vip-modal">
+                <i class="fa-solid fa-gem"></i>
+                <span>حجز استشارة VIP</span>
+            </button>
+            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="القائمة">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </div>
+</header><main class="site-main page-interior-main">
+
+    <!-- Hero Banner -->
+    <section class="page-hero-banner" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.9)), url('assets/images/district1-elevation-front-hd.jpg') center/cover no-repeat;">
+        <div class="site-container">
+            <div class="section-badge luxury-badge-glow">
+                <span class="badge-dot-cyan-pulsing"></span>
+                <span>نبذة عن المجموعة // EGR Real Estate Group</span>
+            </div>
+            <h1 class="page-hero-title">المجموعة الاقتصادية للاستثمار <span class="cyan-text">(EGR)</span></h1>
+            <p class="page-hero-subtitle">
+                صُنّاع المستقبل العمراني في صعيد مصر — رواد تطوير المشروعات التجارية والإدارية الذكية، والمطور الرسمي لصرح <strong>District 1</strong> في قلب مدينة قنا.
+            </p>
+            <div style="margin-top: 1.8rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn-cyan open-vip-modal">
+                    <i class="fa-solid fa-gem"></i>
+                    <span>حجز استشارة مع الإدارة</span>
+                </button>
+                <a href="district1.html" class="btn-outline-cyan" style="color: #ffffff; border-color: rgba(255, 255, 255, 0.3);">
+                    <i class="fa-solid fa-building"></i>
+                    <span>مشروع ديستركت 1</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Executive Leadership Spotlight (صُنّاع النهضة ورؤية التطوير) -->
+    <section class="theme-section executive-leadership-section">
+        <div class="site-container">
+            <div class="section-title-wrap text-center-wrap" style="margin-bottom: 3.5rem;">
+                <div class="section-badge luxury-badge-glow">
+                    <span class="badge-dot-cyan-pulsing"></span>
+                    <span>القيادة والرؤية الاستراتيجية // صُنّاع النهضة</span>
+                </div>
+                <h2 class="section-title luxury-main-title">
+                    كلمة رئيس مجلس الإدارة // <span class="cyan-text">رؤية استثمارية تقود المستقبل</span>
+                </h2>
+                <p class="section-desc luxury-sub-desc">
+                    تقود المجموعة الاقتصادية للاستثمار (EGR) طفرة معمارية نوعية تنقل معايير المدن الذكية إلى قلب الصعيد بقيادة استثمارية وهندسية واعية وموثوقة.
+                </p>
+            </div>
+
+            <!-- Grand Executive Showcase Card -->
+            <div class="leadership-spotlight-card glass-panel executive-master-card">
+                <!-- Portrait Column -->
+                <div class="leader-portrait-col">
+                    <div class="leader-img-frame executive-frame-glow">
+                        <img src="assets/images/eng-yasser-soliman.jpg" alt="السيد ياسر أحمد سليمان - رئيس مجلس إدارة المجموعة الاقتصادية للاستثمار" class="leader-portrait">
+                        <div class="leader-badge-overlay">
+                            <span class="badge-dot-cyan-pulsing"></span>
+                            <span>رئيس مجلس الإدارة والمؤسس</span>
+                        </div>
+                    </div>
+
+                    <!-- Leadership Quick Meta -->
+                    <div class="leader-side-meta">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-medal" style="color: #f59e0b;"></i>
+                            <span>خبرة استثمارية وتطويرية رائدة</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-handshake-simple" style="color: #0284c7;"></i>
+                            <span>شراكات استراتيجية مع كبرى بيوت الخبرة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biography & Credentials Column -->
+                <div class="leader-bio-col">
+                    <div class="leader-header-wrap">
+                        <div class="leader-org-row">
+                            <span class="leader-org-tag"><i class="fa-solid fa-building-shield"></i> المجموعة الاقتصادية للاستثمار (EGR)</span>
+                            <span class="leader-role-tag">المطور العقاري لصرح District 1</span>
+                        </div>
+                        <h3 class="leader-name">السيد ياسر أحمد سليمـان</h3>
+                        <div class="leader-title">مؤسس ورئيس مجلس إدارة EGR والمطور العقاري لصرح District 1</div>
+                    </div>
+
+                    <!-- Official Royal Quote Box -->
+                    <div class="leader-quote royal-quote-box">
+                        <i class="fa-solid fa-quote-right quote-bg-icon"></i>
+                        <p class="quote-text">
+                            "إن صرح District 1 ليس مجرد مجمع تجاري وإداري، بل هو إعلان رسمي عن دخول صعيد مصر عصر المشروعات الذكية المتكاملة التي تجمع بين الجمال المعماري الأيقوني وتلبية تطلعات مجتمع الأعمال وأهالي قنا."
+                        </p>
+                        <div class="quote-author-sign">
+                            <span class="sign-name">— ياسر أحمد سليمان</span>
+                            <span class="sign-role">رئيس مجلس الإدارة</span>
+                        </div>
+                    </div>
+
+                    <!-- Rich Narrative -->
+                    <div class="leader-biography-text">
+                        <p>
+                            يُعد <strong>السيد ياسر أحمد سليمـان</strong> من أبرز الشخصيات الاستثمارية الرائدة في مجال التطوير العقاري وإدارة المشروعات الكبرى في <strong>محافظة قنا</strong> وصعيد مصر. يمتلك رؤية تنموية طموحة تركز على توطين المشروعات الذكية والمستدامة وتقديم منتجات عقارية بمعايير الجودة العالمية غير المسبوقة في الصعيد.
+                        </p>
+                        <p>
+                            بنت <strong>المجموعة الاقتصادية للاستثمار (EGR)</strong> محفظة أعمال متنوعة وناجحة تشمل قطاعات <strong>العقارات، الأغذية والمشروبات، والمرافق الذكية</strong>، مع الالتزام التام بإنجاز صرح <strong>District 1</strong> وخلق أكثر من <strong>1,500 فرصة عمل</strong> مباشرة وغير مباشرة، فضلاً عن حل الأزمة المرورية بوسط مدينة قنا عبر جراجات الـ <strong>6,000 م²</strong> على مستويين تحت الأرض.
+                        </p>
+                    </div>
+
+                    <!-- 4 KPIs -->
+                    <div class="leader-kpis-row">
+                        <div class="leader-kpi">
+                            <span class="num-font">3,200 م²</span>
+                            <span class="lbl">مساحة أرض الصرح</span>
+                        </div>
+                        <div class="leader-kpi">
+                            <span class="num-font">21,667 م²</span>
+                            <span class="lbl">إجمالي المساحة البنائية</span>
+                        </div>
+                        <div class="leader-kpi">
+                            <span class="num-font">6,000 م²</span>
+                            <span class="lbl">مواقف سيارات B1+B2</span>
+                        </div>
+                        <div class="leader-kpi">
+                            <span class="num-font">أكتوبر 2028</span>
+                            <span class="lbl">موعد التسليم المعتمد</span>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="leader-actions-row" style="margin-top: 1.8rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn-cyan open-vip-modal">
+                            <i class="fa-solid fa-gem"></i>
+                            <span>حجز استشارة VIP مع الإدارة</span>
+                        </button>
+                        <button class="btn-outline-cyan open-vip-modal">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>تحميل البروفايل الاستثماري الكامل</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Pillars (قيم وركائز المجموعة) -->
+            <div class="about-company-grid">
+                <div class="about-info-col">
+                    <span class="section-badge"><span class="badge-dot-cyan"></span> ركائز وقيم المجموعة</span>
+                    <h3 class="section-title">رؤية استثمارية تنموية <span class="cyan-text">تبني مستقبلاً مستداماً</span></h3>
+                    <p class="section-desc" style="margin-bottom: 2rem;">
+                        تأسست المجموعة الاقتصادية للاستثمار برؤية واضحة تهدف إلى إحداث نقلة نوعية في المشروعات العقارية متعددة الاستخدامات في صعيد مصر من خلال الالتزام بأعلى المعايير.
+                    </p>
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item glass-panel">
+                            <i class="fa-solid fa-gem highlight-icon"></i>
+                            <div>
+                                <h4>معايير معمارية عالمية</h4>
+                                <p>تطبيق أحدث أكواد البناء والواجهات الزجاجية المزدوجة العازلة وحجر الترافرتين الطبيعي.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item glass-panel">
+                            <i class="fa-solid fa-handshake-angle highlight-icon"></i>
+                            <div>
+                                <h4>التزام ومصداقية تعاقدية</h4>
+                                <p>الالتزام التام بالجداول الزمنية المحددة والمواصفات الإنشائية المعتمدة للتسليم في أكتوبر 2028.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item glass-panel">
+                            <i class="fa-solid fa-chart-line highlight-icon"></i>
+                            <div>
+                                <h4>قيمة استثمارية متصاعدة</h4>
+                                <p>اختيار مواقع استراتيجية حيوية في قلب المدن تضمن أعلى عوائد إيجارية ونمو رأسمالي مستدام.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item glass-panel">
+                            <i class="fa-solid fa-users highlight-icon"></i>
+                            <div>
+                                <h4>تنمية مجتمعية وشراكات</h4>
+                                <p>خلق بيئة أعمال متكاملة تدعم رواد الأعمال وتوفر فرص عمل واعدة لكوادر الصعيد.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-img-col">
+                    <div class="about-img-card glass-panel">
+                        <img src="assets/images/district1-elevation-front-hd.jpg" alt="District 1 Architecture" class="about-primary-img">
+                        <div class="about-img-overlay">
+                            <h4 style="color: #fff; font-weight: 800; margin: 0 0 0.3rem;">مشروع District 1 بقلب قنا</h4>
+                            <p style="color: #cbd5e1; font-size: 0.85rem; margin: 0;">أول صرح تجاري وإداري ذكي متكامل بمساحة بنائية 21,667 م² وارتفاع 33.6 متراً.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors & Investment Fields (قطاعات أعمال EGR) -->
+    <section class="theme-section" style="background-color: var(--bg-secondary);">
+        <div class="site-container">
+            <div class="section-title-wrap text-center-wrap">
+                <div class="section-badge">
+                    <span class="badge-dot-cyan"></span>
+                    <span>تنوع المحفظة الاستثمارية</span>
+                </div>
+                <h2 class="section-title">قطاعات ومجالات <span class="cyan-text">أعمال المجموعة الاقتصادية</span></h2>
+                <p class="section-desc">
+                    محفظة استثمارية متوازنة تجمع بين التميز في التطوير العقاري وريادة قطاع الأغذية والمشروبات وإدارة المرافق.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
+                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-building"></i></div>
+                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">التطوير العقاري والتجاري</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        تطوير الصروح والمجمعات متعددة الاستخدامات بمواصفات المدن الذكية، وتوفير مساحات للمحلات، المكاتب، والعيادات.
+                    </p>
+                </div>
+
+                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
+                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-utensils"></i></div>
+                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">الأغذية والمشروبات (F&B)</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        استقطاب وتشغيل أرقى سلاسل المطاعم والكافيهات العالمية، وتجهيز مساحات طعام راقية وشرفات معلقة في قلب قنا.
+                    </p>
+                </div>
+
+                <div class="glass-panel" style="padding: 2.2rem; border-radius: 20px; background: #ffffff; border: 1.5px solid var(--border-light); text-align: center;">
+                    <div class="highlight-icon" style="margin: 0 auto 1.2rem; width: 60px; height: 60px; font-size: 1.6rem;"><i class="fa-solid fa-solar-panel"></i></div>
+                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.8rem;">إدارة الأصول والمرافق (BMS)</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;">
+                        إدارة المباني الذكية وصيانتها باستخدام أحدث نظم BMS، وأنظمة المراقبة الأمنية والتحكم في الطاقة والمواقف 24/7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact CTA -->
+    
+<section id="contact-section" class="theme-section" style="background-color: var(--bg-secondary);">
+    <div class="site-container">
+        <div class="contact-vip-grid">
+            <div>
+                <div class="section-badge">
+                    <span class="badge-dot-cyan"></span>
+                    <span>تواصل مباشر واستشارة فورية</span>
+                </div>
+                <h2 class="section-title">
+                    تواصل مع مستشاري <span class="cyan-text">EGR للاستثمار العقاري</span>
+                </h2>
+                <p class="section-desc" style="margin-bottom: 2.5rem;">
+                    فريقنا المتخصص جاهز للإجابة عن استفساراتكم وتزويدكم بالأسعار التنافسية وخطط السداد المتاحة لمشروع District 1.
+                </p>
+
+                <div class="contact-info-cards">
+                    <a href="tel:01040022670" class="contact-card-item glass-panel">
+                        <div class="contact-icon-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">الخط المباشر</div>
+                            <div class="num-font" style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary);">01040022670</div>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/201040022670?text=" target="_blank" rel="noopener" class="contact-card-item glass-panel">
+                        <div class="contact-icon-circle" style="color: #25D366; background: rgba(37, 211, 102, 0.1);">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">محادثة فورية عبر واتساب</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">تواصل مع خدمة العملاء 24/7</div>
+                        </div>
+                    </a>
+
+                    <div class="contact-card-item glass-panel">
+                        <div class="contact-icon-circle">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">البريد الإلكتروني الرسمي</div>
+                            <div class="num-font" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">contact@district1-eg.com</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item glass-panel">
+                        <div class="contact-icon-circle">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">الموقع الجغرافي</div>
+                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">قلب مدينة قنا، محافظة قنا، مصر</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vip-form-box">
+                <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 0.6rem;">طلب استشارة وعرض أسعار رسمي</h3>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                    املأ النموذج التالي وسيتم التواصل معكم في غضون دقائق من قِبل المستشار العقاري.
+                </p>
+
+                <form onsubmit="event.preventDefault(); window.open('https://wa.me/201040022670?text=' + encodeURIComponent('مرحباً EGR، أود الحصول على عرض أسعار لوحدات District 1.'), '_blank');">
+                    <div class="form-group">
+                        <label>الاسم بالكامل</label>
+                        <input type="text" class="form-control" placeholder="أدخل اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <label>رقم الهاتف</label>
+                        <input type="tel" class="form-control num-font" placeholder="010XXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label>الوحدة المطلوبة</label>
+                        <select class="form-control">
+                            <option>متجر تجاري (45 - 150 م²)</option>
+                            <option>مكتب إداري / عيادة (60 - 150 م²)</option>
+                            <option>مقر بنك ومصرف (186 - 329 م²)</option>
+                            <option>كشك خدمات سريعة (35 م²)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-cyan" style="width: 100%; margin-top: 1rem;">
+                        <span>إرسال الطلب الآن</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main><footer class="site-footer">
+    <div class="site-container">
+        <div class="footer-top-grid">
+            <div class="footer-col">
+                <img src="assets/images/egr-logo-white.png" alt="EGR Real Estate" class="footer-logo">
+                <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    <strong>EGR للاستثمار والتطوير العقاري</strong> — المطور الرسمي لمشروع ديستركت 1، الوجهة التجارية والإدارية المتكاملة في قلب مدينة قنا.
+                </p>
+                <div style="display: flex; gap: 1rem; color: var(--cyan-300); font-size: 1.2rem;">
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.facebook.com/District1.eg" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">الصفحات الرئيسية</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن (عن EGR)</a></li>
+                    <li><a href="district1.html">مشروع ديستركت 1</a></li>
+                    <li><a href="partners.html">شركاء النجاح</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">مشروع District 1</h4>
+                <ul class="footer-nav-list">
+                    <li><span>مساحة الأرض: 3,200 م²</span></li>
+                    <li><span>الارتفاع: 33.6 متر</span></li>
+                    <li><span>إجمالي المباني: 21,667 م²</span></li>
+                    <li><span>مواقف السيارات: 6,000 م²</span></li>
+                    <li><span>التسليم: خلال 3 سنوات (2028)</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">معلومات الاتصال</h4>
+                <ul class="footer-nav-list">
+                    <li><i class="fa-solid fa-phone" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></li>
+                    <li><i class="fa-solid fa-envelope" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></li>
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> قلب مدينة قنا، محافظة قنا، مصر</li>
+                    <li><i class="fa-solid fa-clock" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> متاح للرد 24/7</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>
+                &copy; 2026 <strong>EGR للاستثمار العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
+            </div>
+            <div>
+                المصدر الرسمي الموثق: <a href="https://district1-eg.com/" target="_blank" rel="noopener" style="color: var(--cyan-300);">district1-eg.com</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- VIP Booking Modal -->
+<div id="vip-modal-overlay" class="vip-modal-overlay">
+    <div class="vip-modal-card">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="section-badge">
+            <span class="badge-dot-cyan"></span>
+            <span>حجز موعد واستشارة عقارية</span>
+        </div>
+        <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">امتلك وحدتك في <span class="cyan-text">District 1</span></h3>
+        <p style="font-size: 0.95rem; margin-bottom: 1.8rem; color: var(--text-secondary);">
+            سجل بياناتك للتواصل المباشر مع المستشار العقاري الرسمي لمشروع ديستركت 1 بقلب قنا والحصول على كتيب الأسعار والمخططات.
+        </p>
+        <form onsubmit="event.preventDefault(); window.open('https://wa.me/201040022670?text=' + encodeURIComponent('مرحباً EGR، أود الاستفسار عن وحدات مشروع District 1 بقلب قنا.'), '_blank');">
+            <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" class="form-control" placeholder="أدخل اسمك الكريم" required>
+            </div>
+            <div class="form-group">
+                <label>رقم الهاتف / واتساب</label>
+                <input type="tel" class="form-control num-font" placeholder="010XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label>نوع الوحدة المستهدفة</label>
+                <select class="form-control">
+                    <option>وحدة تجارية / براند (45 - 150 م²)</option>
+                    <option>مقر إداري / عيادة (60 - 150 م²)</option>
+                    <option>مقر مصرفي / بنك (186 - 329 م²)</option>
+                    <option>كشك خدمات سريعة (35 م²)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-cyan" style="width: 100%; margin-top: 1rem;">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+                <span>إرسال وتواصل فوري عبر واتساب</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+<!-- Scripts -->
+<script src="assets/js/three-background.js"></script>
+<script src="assets/js/hero-scrubber.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*
+Theme Name: District 1 — EGR Luxury Real Estate Theme
+Theme URI: https://district1-eg.com/
+Author: EGR Real Estate Development
+Author URI: https://district1-eg.com/
+Description: قالب ووردبريس تفاعلي فاخر لمشروع District 1 بقلب قنا — مدعوم بتقنيات WebGL, Three.js, GSAP ScrollTrigger وتتبع فريمات الهيرو السينمائية مع سرد معماري متزامن.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+Text Domain: egr-district1
+Domain Path: /languages
+Tags: real-estate, modern, luxury, webgl, gsap, threejs, rtl-support, dark-mode
+License: Proprietary
+*/
+
+@import url('assets/css/theme-style.css');
