@@ -59,112 +59,231 @@ get_header();
         </div>
     </section>
 
-    <!-- 3. نظرة عامة على المبنى -->
-    <section id="building-overview" class="theme-section">
+    <!-- 3. نظرة عامة على المبنى — المسرح المعماري التفاعلي والمؤشرات الهندسية -->
+    <section id="building-overview" class="theme-section building-masterpiece-section">
         <div class="site-container">
-            <div class="section-title-wrap text-center-wrap">
-                <div class="section-badge">
-                    <span class="badge-dot-cyan"></span>
-                    <span>المواصفات والأرقام الهندسية</span>
+            <!-- Section Header -->
+            <div class="section-title-wrap text-center-wrap" style="margin-bottom: 2.8rem;">
+                <div class="section-badge luxury-badge-glow">
+                    <span class="badge-dot-cyan-pulsing"></span>
+                    <span>المواصفات والمؤشرات الهندسية المعتمدة</span>
                 </div>
-                <h2 class="section-title">نظرة عامة <span class="cyan-text">على المبنى</span></h2>
-                <p class="section-desc">
-                    مصمم ليكون وجهة متكاملة بكل المقاييس في قلب محافظة قنا.
+                <h2 class="section-title luxury-main-title">
+                    الأيقونة المعمارية <span class="cyan-text">والأرقام القياسية لصرح District 1</span>
+                </h2>
+                <p class="section-desc luxury-sub-desc">
+                    صُمم الصرح ليكون المعيار الذهبي للتطوير العقاري الذكي في صعيد مصر، بأبعاد معمارية متناسقة ومساحات محسوبة بأعلى درجات الدقة الهندسية.
                 </p>
             </div>
 
-            <!-- 6 Official Metric Boxes -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; margin-bottom: 3.5rem;">
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">إجمالي مساحة الأرض</div>
-                    <div class="num-font" style="font-size: 2.4rem; font-weight: 900; color: #0284c7;">3,200 <span style="font-size: 1.1rem; font-family: var(--font-ar);">m²</span></div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">المساحة الإجمالية للأرض</div>
+            <!-- Top Hero KPI Summary Ribbon (شريط المؤشرات السريعة) -->
+            <div class="specs-hero-kpi-ribbon">
+                <div class="kpi-ribbon-card">
+                    <div class="kpi-ribbon-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                    <div class="kpi-ribbon-info">
+                        <span class="kpi-ribbon-label">مساحة الأرض الإجمالية</span>
+                        <div class="kpi-ribbon-value">
+                            <span class="spec-counter-num num-font" data-target="3200">3,200</span>
+                            <span class="kpi-ribbon-unit">م²</span>
+                        </div>
+                        <span class="kpi-ribbon-sub">قلب قنا النابض</span>
+                    </div>
                 </div>
 
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">الارتفاع الإجمالي</div>
-                    <div class="num-font" style="font-size: 2.4rem; font-weight: 900; color: #0284c7;">33.6 <span style="font-size: 1.1rem; font-family: var(--font-ar);">مترًا</span></div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">ارتفاع معماري شاهق ومميز</div>
+                <div class="kpi-ribbon-card">
+                    <div class="kpi-ribbon-icon"><i class="fa-solid fa-building"></i></div>
+                    <div class="kpi-ribbon-info">
+                        <span class="kpi-ribbon-label">إجمالي المسطحات البنائية</span>
+                        <div class="kpi-ribbon-value">
+                            <span class="spec-counter-num num-font" data-target="21667">21,667</span>
+                            <span class="kpi-ribbon-unit">م²</span>
+                        </div>
+                        <span class="kpi-ribbon-sub">8 أدوار + أرضي + جراجات</span>
+                    </div>
                 </div>
 
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">عدد الطوابق</div>
-                    <div class="num-font" style="font-size: 1.8rem; font-weight: 900; color: #0284c7;">8 طوابق + أرضي + سفلي</div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">8 طوابق علوية + أرضي + بدرومين</div>
+                <div class="kpi-ribbon-card">
+                    <div class="kpi-ribbon-icon"><i class="fa-solid fa-arrows-up-down"></i></div>
+                    <div class="kpi-ribbon-info">
+                        <span class="kpi-ribbon-label">الارتفاع المعماري الشاهق</span>
+                        <div class="kpi-ribbon-value">
+                            <span class="spec-counter-num num-font" data-target="33.6">33.6</span>
+                            <span class="kpi-ribbon-unit">متراً</span>
+                        </div>
+                        <span class="kpi-ribbon-sub">إطلالات بانورامية مفتوحة</span>
+                    </div>
                 </div>
 
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">موقف سيارات (مستويين)</div>
-                    <div class="num-font" style="font-size: 2.4rem; font-weight: 900; color: #0284c7;">6,000 <span style="font-size: 1.1rem; font-family: var(--font-ar);">متر مربع</span></div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">حوالي 6000 متر مربع</div>
-                </div>
-
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">المنطقة التجارية (الأرضي - الثالث)</div>
-                    <div class="num-font" style="font-size: 2.4rem; font-weight: 900; color: #0284c7;">10,707 <span style="font-size: 1.1rem; font-family: var(--font-ar);">مترًا مربعًا</span></div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">3 طوابق تجارية + طابق أرضي</div>
-                </div>
-
-                <div class="glass-panel" style="padding: 2rem; border-radius: 20px; text-align: center; background: #ffffff; border: 1.5px solid var(--border-light);">
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 700; margin-bottom: 0.4rem;">المنطقة الإدارية (الرابع - الثامن)</div>
-                    <div class="num-font" style="font-size: 2.4rem; font-weight: 900; color: #0284c7;">10,960 <span style="font-size: 1.1rem; font-family: var(--font-ar);">متر مربع</span></div>
-                    <div style="font-size: 0.8rem; color: var(--text-stone); margin-top: 0.3rem;">حوالي 10,960 متر مربع (5 طوابق)</div>
+                <div class="kpi-ribbon-card">
+                    <div class="kpi-ribbon-icon"><i class="fa-solid fa-square-parking"></i></div>
+                    <div class="kpi-ribbon-info">
+                        <span class="kpi-ribbon-label">مواقف السيارات الذكية</span>
+                        <div class="kpi-ribbon-value">
+                            <span class="spec-counter-num num-font" data-target="6000">6,000</span>
+                            <span class="kpi-ribbon-unit">م²</span>
+                        </div>
+                        <span class="kpi-ribbon-sub">مستويين B1 + B2 تحت الأرض</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Floor Distribution Detailed Breakdown -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                <!-- 1. Commercial Floors -->
-                <div class="glass-panel" style="border-radius: 22px; padding: 2.2rem; background: #ffffff; border: 1.5px solid var(--border-light); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
-                            <span class="unit-type-tag commercial-tag" style="position: static;">الطابق الأرضي - الثالث</span>
-                            <span class="num-font" style="font-weight: 800; color: var(--azure-700); font-size: 1.05rem;">10,707 م²</span>
+            <!-- Master Dual Experience Grid (3D Holographic Stage + Intelligent Sector Explorer) -->
+            <div class="specs-dual-cockpit-grid">
+                
+                <!-- 1. Right Column: 3D Holographic Stage with Angle Switcher & Hotspots -->
+                <div class="specs-stage-column">
+                    <div class="stage-hologram-wrapper" id="stage-hologram-wrapper">
+                        <!-- Glowing Ambient Rings -->
+                        <div class="stage-ambient-glow"></div>
+                        <div class="stage-grid-radar"></div>
+
+                        <!-- Floating Tech Tags on Building -->
+                        <div class="floating-tech-tag tag-top-right">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>BMS Smart Control // نظام إدارة ذكي</span>
                         </div>
-                        <h3 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 1rem;">الطوابق التجارية (الأرضي - الطابق الثالث)</h3>
-                        <ul class="unit-features-list">
-                            <li><i class="fa-solid fa-circle-check"></i> حوالي ٥٨ متجرًا تجاريًا لكبرى العلامات.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> هايبر ماركت مجهز في الطابق الأرضي.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مطاعم ومناطق لتناول الطعام في الطابق الأرضي والأول والثاني.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مصمم لسهولة الوصول وتدفق العملاء.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> واجهة معمارية عصرية لجاذبية بصرية قوية.</li>
-                        </ul>
+                        <div class="floating-tech-tag tag-top-left">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>كود سلامة وزلازل معتمد</span>
+                        </div>
+                        <div class="floating-tech-tag tag-bottom-center">
+                            <i class="fa-solid fa-gem"></i>
+                            <span>Travertine & Double Glass</span>
+                        </div>
+
+                        <!-- 3D Interactive Building Cutouts -->
+                        <div class="building-render-display" id="building-render-display">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/building-cutout-1.png' ); ?>" alt="District 1 Main View" class="building-stage-img active" id="stage-img-1" data-index="0">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/building-cutout-2.png' ); ?>" alt="District 1 3D Perspective" class="building-stage-img" id="stage-img-2" data-index="1">
+                            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/building-cutout-3.png' ); ?>" alt="District 1 Podium & Entrance" class="building-stage-img" id="stage-img-3" data-index="2">
+                        </div>
+
+                        <!-- Interactive Angle Selector Ribbon -->
+                        <div class="stage-perspective-switcher">
+                            <button class="stage-angle-btn active" data-target-img="0">
+                                <i class="fa-solid fa-cube"></i>
+                                <span>المنظور الرئيسي</span>
+                            </button>
+                            <button class="stage-angle-btn" data-target-img="1">
+                                <i class="fa-solid fa-street-view"></i>
+                                <span>منظور الواجهة</span>
+                            </button>
+                            <button class="stage-angle-btn" data-target-img="2">
+                                <i class="fa-solid fa-building"></i>
+                                <span>البوديوم والمداخل</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 2. Administrative Floors -->
-                <div class="glass-panel" style="border-radius: 22px; padding: 2.2rem; background: #ffffff; border: 1.5px solid var(--border-light); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
-                            <span class="unit-type-tag admin-tag" style="position: static;">الطابق الرابع إلى الثامن</span>
-                            <span class="num-font" style="font-weight: 800; color: var(--azure-700); font-size: 1.05rem;">10,960 م²</span>
+                <!-- 2. Left Column: Interactive Sector Cards -->
+                <div class="specs-sectors-column">
+                    <!-- Sector 1: Commercial Podium -->
+                    <div class="sector-interactive-card active" data-sector="commercial">
+                        <div class="sector-card-header">
+                            <div class="sector-icon-title-wrap">
+                                <div class="sector-chip-icon commercial-icon"><i class="fa-solid fa-store"></i></div>
+                                <div>
+                                    <span class="sector-badge-mini">الطابق الأرضي — الثالث</span>
+                                    <h3 class="sector-card-title">البوديوم التجاري والترفيهي</h3>
+                                </div>
+                            </div>
+                            <div class="sector-size-badge num-font">10,707 م²</div>
                         </div>
-                        <h3 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 1rem;">الطوابق الإدارية (الطابق الرابع إلى الثامن)</h3>
-                        <ul class="unit-features-list">
-                            <li><i class="fa-solid fa-circle-check"></i> مساحات مكتبية للشركات والمستثمرين.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> تصميم عصري يجمع بين العملية والجمال.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مكاتب بنكية في الطابق الأول.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> تصميم آمن ومرن لمساحة العمل.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> بيئة آمنة وفعالة مدعومة بأحدث التقنيات.</li>
+                        <p class="sector-brief-text">
+                            وجهة التسوق والترفيه الأكثر حيوية في صعيد مصر، مصممة لاستيعاب كبرى البراندات والتدفقات الجماهيرية العالية.
+                        </p>
+                        <ul class="sector-highlights-list">
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>58 متجراً تجارياً</strong> مجهزاً لأرقى التوكيلات والعلامات العالمية.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>هايبر ماركت متكامل</strong> بمساحة شاسعة ومدخل منفصل للخدمات.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>مجمع مطاعم وكافيهات</strong> بتراسات معلقة بإطلالات بانورامية مفتوحة.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>سلالم ومصاعد بانورامية</strong> ذكية تضمن انسيابية الحركة بين كافة الطوابق.</li>
                         </ul>
+                        <div class="sector-card-footer">
+                            <a href="https://wa.me/201040022670?text=<?php echo rawurlencode('مرحباً EGR، أود الاستفسار عن حجز وحدة في البوديوم التجاري بمشروع District 1.'); ?>" target="_blank" rel="noopener" class="btn-sector-whatsapp">
+                                <span>استفسر عن الوحدات التجارية</span>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sector 2: Admin & Medical Towers -->
+                    <div class="sector-interactive-card" data-sector="admin">
+                        <div class="sector-card-header">
+                            <div class="sector-icon-title-wrap">
+                                <div class="sector-chip-icon admin-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                <div>
+                                    <span class="sector-badge-mini admin-mini">الطابق الرابع — الثامن</span>
+                                    <h3 class="sector-card-title">الأبراج الإدارية والعيادات والمقرات المصرفية</h3>
+                                </div>
+                            </div>
+                            <div class="sector-size-badge num-font">10,960 م²</div>
+                        </div>
+                        <p class="sector-brief-text">
+                            بيئة أعمال ذكية توفر الخصوصية والهدوء للشركات والبنوك والعيادات مع بنية رقمية فائقة التطور.
+                        </p>
+                        <ul class="sector-highlights-list">
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>مقرات بنكية ومصرفية</strong> رئيسية في الواجهة والطابق الأول.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>مكاتب ذكية وعيادات</strong> بمساحات مرنة (من 60 إلى 150 م²).</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>مداخل واستقبال VIP مستقل</strong> ومصاعد سريعة مخصصة لقطاع الأعمال.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>بنية ألياف ضوئية FTTH</strong> وتكييف مركزي متطور ومولدات طوارئ.</li>
+                        </ul>
+                        <div class="sector-card-footer">
+                            <a href="https://wa.me/201040022670?text=<?php echo rawurlencode('مرحباً EGR، أود الاستفسار عن المكاتب الإدارية والعيادات بمشروع District 1.'); ?>" target="_blank" rel="noopener" class="btn-sector-whatsapp">
+                                <span>استفسر عن المكاتب والعيادات</span>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sector 3: Smart Basement Parking -->
+                    <div class="sector-interactive-card" data-sector="parking">
+                        <div class="sector-card-header">
+                            <div class="sector-icon-title-wrap">
+                                <div class="sector-chip-icon parking-icon"><i class="fa-solid fa-square-parking"></i></div>
+                                <div>
+                                    <span class="sector-badge-mini parking-mini">مستويين تحت الأرض B1 + B2</span>
+                                    <h3 class="sector-card-title">مواقف السيارات الذكية والأمان المتكامل</h3>
+                                </div>
+                            </div>
+                            <div class="sector-size-badge num-font">6,000 م²</div>
+                        </div>
+                        <p class="sector-brief-text">
+                            أكبر جراج إلكتروني ذكي في قنا لحل أزمة التكدس المروري وتوفير أقصى درجات الراحة لرواد الصرح والمستثمرين.
+                        </p>
+                        <ul class="sector-highlights-list">
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>سعة مئات المركبات</strong> مع مسارات حركة مدروسة هندسياً.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>نظام توجيه وحجز إلكتروني</strong> لإرشاد السائقين للأماكن الشاغرة فوراً.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>بوابات أمنية وكاميرات مراقبة</strong> ذكية على مدار 24 ساعة.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>مصاعد مباشرة</strong> تنقل الزوار من مواقف السيارات للأدوار المطلوبة.</li>
+                        </ul>
+                        <div class="sector-card-footer">
+                            <a href="https://wa.me/201040022670?text=<?php echo rawurlencode('مرحباً EGR، أود الاستفسار عن خدمات ومواصفات مشروع District 1.'); ?>" target="_blank" rel="noopener" class="btn-sector-whatsapp">
+                                <span>تواصل مع المستشار العقاري</span>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- 3. Basement Parking -->
-                <div class="glass-panel" style="border-radius: 22px; padding: 2.2rem; background: #ffffff; border: 1.5px solid var(--border-light); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
-                            <span class="unit-type-tag banking-tag" style="position: static;">الطابق السفلي</span>
-                            <span class="num-font" style="font-weight: 800; color: var(--azure-700); font-size: 1.05rem;">6,000 م²</span>
-                        </div>
-                        <h3 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 1rem;">الطابق السفلي (موقف السيارات)</h3>
-                        <ul class="unit-features-list">
-                            <li><i class="fa-solid fa-circle-check"></i> موقف سيارات واسع (حوالي ٦٠٠٠ متر مربع).</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مدخل مباشر إلى المصاعد والطوابق الرئيسية.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مصمم لضمان انسيابية حركة المرور وأمان المركبات.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> مستويين تحت الأرض مجهزين بأنظمة توجيه ذكية.</li>
-                        </ul>
-                    </div>
+            <!-- Bottom Engineering Guarantee & Trust Bar -->
+            <div class="specs-trust-guarantee-bar">
+                <div class="trust-item">
+                    <i class="fa-solid fa-stamp"></i>
+                    <span>تراخيص بناء وموافقات حكومية رسمية معتمدة</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <span>المقاول العام: شركة الصعيد العامة للمقاولات (SCC)</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>الاستشاري الإنشائي: مكتب سكن (أ.د. حداد سعيد)</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>موعد التسليم والافتتاح الرسمي: <strong>أكتوبر 2028</strong></span>
                 </div>
             </div>
         </div>

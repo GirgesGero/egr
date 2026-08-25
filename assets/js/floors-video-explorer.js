@@ -67,21 +67,23 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   }
 
-  // 4. GSAP ScrollTrigger Parallax (Responsive based on screen width)
+  // 4. GSAP ScrollTrigger Cinematic Zoom (Eliminates vertical shifts and prevents edge gaps)
   if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
 
-    const isMobile = window.innerWidth <= 768;
-    gsap.to(video, {
-      y: isMobile ? '6%' : '16%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#floors-section',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: isMobile ? 0.5 : true
+    gsap.fromTo(video, 
+      { scale: 1.0 },
+      {
+        scale: 1.05,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '#floors-section',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        }
       }
-    });
+    );
   }
 
   console.log('District 1 Mobile-Optimized Pure Video Window Ready!');

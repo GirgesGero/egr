@@ -9,39 +9,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800;900&family=Outfit:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FontAwesome 6.6.0 -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="assets/css/theme-style.css">
 </head>
 <body>
 
 <!-- Preloader -->
-<!-- Header -->
+<!-- Luxury Architectural Glassmorphic Navbar -->
 <header id="site-header" class="site-header">
-    <div class="site-container header-inner">
+    <div class="header-inner">
+        <!-- Brand Area -->
         <div class="header-brand">
-            <a href="index.html" class="brand-link">
+            <a href="index.html" class="brand-link" aria-label="الرئيسية EGR">
                 <img src="assets/images/egr-logo.png" alt="EGR Real Estate" class="brand-logo">
             </a>
             <div class="brand-divider"></div>
             <div class="brand-badge-wrap">
                 <span class="brand-tag">DISTRICT 1</span>
-                <span class="brand-subtag">قلب قنا</span>
+                <span class="brand-subtag"><span class="badge-dot-cyan-pulsing"></span> صرح قنا الأول</span>
             </div>
         </div>
 
+        <!-- Navigation Menu -->
         <nav class="header-nav">
             <ul id="nav-links" class="nav-links">
-                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
-                <li><a href="about.html" class="nav-link">من نحن</a></li>
-                <li><a href="district1.html" class="nav-link">مشروع ديستركت 1</a></li>
-                                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> <span>الرئيسية</span></a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-shield"></i> <span>من نحن</span></a></li>
+                <li><a href="district1.html" class="nav-link"><i class="fa-solid fa-gem"></i> <span>مشروع ديستركت 1</span></a></li>
+                <li><a href="contact.html" class="nav-link active"><i class="fa-solid fa-envelope"></i> <span>اتصل بنا</span></a></li>
+                <li class="mobile-cta-item">
+                    <button class="btn-nav-vip open-vip-modal" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>حجز استشارة VIP</span>
+                    </button>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="mobile-nav-whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>محادثة واتساب مباشرة</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
+        <!-- Actions -->
         <div class="header-actions">
-            <button class="btn-cyan open-vip-modal">
+            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="nav-quick-whatsapp desktop-cta" aria-label="تواصل عبر واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <button class="btn-nav-vip open-vip-modal desktop-cta">
                 <i class="fa-solid fa-gem"></i>
                 <span>حجز استشارة VIP</span>
             </button>
@@ -98,7 +115,7 @@
                         </div>
                     </a>
 
-                    <div class="contact-card-item glass-panel">
+                    <a href="mailto:contact@district1-eg.com" class="contact-card-item glass-panel">
                         <div class="contact-icon-circle">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
@@ -106,17 +123,17 @@
                             <div style="font-size: 0.85rem; color: var(--text-muted);">البريد الإلكتروني الرسمي</div>
                             <div class="num-font" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">contact@district1-eg.com</div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-card-item glass-panel">
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="contact-card-item glass-panel">
                         <div class="contact-icon-circle">
                             <i class="fa-solid fa-map-location-dot"></i>
                         </div>
                         <div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">الموقع الجغرافي</div>
-                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">قلب مدينة قنا، محافظة قنا، مصر</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">المقر والموقع الجغرافي</div>
+                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">شارع 23 يوليو، برج زمزم - الدور 4، قنا</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -152,57 +169,181 @@
             </div>
         </div>
     </div>
-</section><section id="location-section" class="theme-section">
+</section>
+
+<section id="location-section" class="theme-section location-section-v3">
     <div class="site-container">
-        <div class="section-title-wrap">
-            <div class="section-badge">
-                <span class="badge-dot-cyan"></span>
-                <span>الموقع الاستراتيجي الاستثنائي</span>
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center-wrap" style="margin-bottom: 2.8rem;">
+            <div class="section-badge luxury-badge-glow">
+                <span class="badge-dot-cyan-pulsing"></span>
+                <span>الموقع الاستراتيجي // تقاطع شرايين الاستثمار</span>
             </div>
-            <h2 class="section-title">في القلب النابض <span class="cyan-text">لمدينة قنا</span></h2>
-            <p class="section-desc">
-                يقع مشروع District 1 في أرقى وأنشط المواقع الحيوية بمدينة قنا (أرض مقر نقابة المهن الزراعية سابقاً)، محاطاً بكبرى المنشآت الحيوية والمحاور الرئيسية.
+            <h2 class="section-title luxury-main-title">
+                في قلب قنا النابض <span class="cyan-text">على بُعد دقائق من كافة معالم ومراكز المحافظة</span>
+            </h2>
+            <p class="section-desc luxury-sub-desc">
+                موقع استثنائي في شارع 23 يوليو (أرض نقابة الزراعيين سابقاً) يضع مشروعك في بؤرة الكثافة المرورية والحركة الاقتصادية الأكبر بصعيد مصر.
             </p>
         </div>
 
-        <div class="location-grid">
-            <div class="location-landmarks">
-                <div class="landmark-box glass-panel">
-                    <i class="fa-solid fa-building-columns landmark-icon"></i>
-                    <div>
-                        <h4 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 0.2rem;">أرض نقابة الزراعيين (قلب المدينة)</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">الموقع الأكثر حيوية وتدفقاً تجارياً على الإطلاق بقلب قنا</p>
-                    </div>
+        <!-- 1. Top 4 Proximity Radar Cards Matrix -->
+        <div class="location-top-matrix-grid">
+            <!-- Landmark 1 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-train-subway"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 3 دقائق</span>
                 </div>
-
-                <div class="landmark-box glass-panel">
-                    <i class="fa-solid fa-route landmark-icon"></i>
-                    <div>
-                        <h4 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 0.2rem;">محاور رئيسية وميادين حيوية</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">سهولة الوصول السريع من كافة أنحاء المحافظة والمراكز المجاورة</p>
-                    </div>
-                </div>
-
-                <div class="landmark-box glass-panel">
-                    <i class="fa-solid fa-hospital landmark-icon"></i>
-                    <div>
-                        <h4 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 0.2rem;">محاط بالخدمات والمصالح والمستشفيات</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">أعلى كثافة إقبال وطلب للمكاتب الإدارية والعيادات المتخصصة</p>
-                    </div>
+                <h4 class="matrix-card-title">ميدان ومحطة قطارات قنا</h4>
+                <p class="matrix-card-desc">شريان ربط الصعيد بالقاهرة بتدفق يتجاوز <strong>45,000 مسافر ومتسوق يومياً</strong>.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-users"></i>
+                    <span>التدفق الجماهيري الأعلى</span>
                 </div>
             </div>
 
-            <!-- Location 3D Render Display Card -->
-            <div class="map-card-wrapper glass-panel">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/district1-facade-main.jpg' ); ?>" alt="موقع مشروع ديستركت 1" class="location-facade-img">
-                <div class="location-radar-pin">
-                    <div class="radar-dot"></div>
-                    <span class="hud-tag" style="margin-top: 0.6rem;">DISTRICT 1 // قنا</span>
+            <!-- Landmark 2 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-landmark-dome"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 5 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">المجمع الحكومي والمحافظة</h4>
+                <p class="matrix-card-desc">مركز اتخاذ القرار والوزارات والبنوك، لضمان طلب دائم على المكاتب والعيادات.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>المقرات الإدارية والمصرفية</span>
+                </div>
+            </div>
+
+            <!-- Landmark 3 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-water"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 4 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">كورنيش وممشى النيل السياحي</h4>
+                <p class="matrix-card-desc">المتنفس الترفيهي الأول للعائلات ورواد المطاعم والكافيهات والتسوق المسائي.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <span>الوجهة الترفيهية الأولى</span>
+                </div>
+            </div>
+
+            <!-- Landmark 4 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 8 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">جامعة جنوب الوادي والمستشفيات</h4>
+                <p class="matrix-card-desc">كتلة استهلاكية وأكاديمية ضخمة تضم <strong>+65,000 طالب وأكاديمي</strong> وطبيب.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>القوة الشرائية الأقوى</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Interactive Panoramic Visual & Smart Parking Cockpit Grid -->
+        <div class="location-interactive-cockpit-grid">
+            <!-- Right Column: Visual Facade Display & Direct Map Navigation -->
+            <div class="location-panoramic-card">
+                <div class="panoramic-img-wrap">
+                    <img src="assets/images/district1-elevation-front-hd.jpg" alt="District 1 Panoramic Facade" class="panoramic-img">
+                    <div class="panoramic-radar-hud">
+                        <span class="radar-pulsing-circle"></span>
+                        <span>شارع 23 يوليو // قلب قنا النابض</span>
+                    </div>
+                    <div class="panoramic-gps-badge">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>26.1558° N, 32.7160° E</span>
+                    </div>
+                </div>
+
+                <div class="panoramic-action-footer">
+                    <div class="location-address-wrap">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>شارع 23 يوليو، برج زمزم — الدور الرابع، قنا، مصر</span>
+                    </div>
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="btn-open-map-action">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>فتح الموقع على الخريطة</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Left Column: 6,000 m² Smart Parking & Infrastructure Cockpit -->
+            <div class="parking-smart-cockpit-card">
+                <div class="parking-header-row">
+                    <div class="parking-title-group">
+                        <span class="parking-kicker-badge"><i class="fa-solid fa-square-parking"></i> حل هندسي جذري</span>
+                        <h3 class="parking-main-title">منظومة المواقف الذكية (6,000 م²)</h3>
+                    </div>
+                    <div class="parking-levels-chip">B1 + B2 تحت الأرض</div>
+                </div>
+
+                <div class="parking-kpi-row">
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">6,000</span>
+                        <span class="parking-kpi-unit">م² مسطح الجراج</span>
+                    </div>
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">2</span>
+                        <span class="parking-kpi-unit">طابقين تحت الأرض</span>
+                    </div>
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">24/7</span>
+                        <span class="parking-kpi-unit">حراسة وتوجيه ذكي</span>
+                    </div>
+                </div>
+
+                <ul class="parking-features-checklist">
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>سعة استيعابية ضخمة لمئات المركبات:</strong>
+                            <p>تقضي تماماً على معضلة التكدس المروري وتوفر لعملائك وزوارك راحة فورية عند الوصول.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>نظام توجيه وحجز إلكتروني ذكي:</strong>
+                            <p>شاشات رقمية وحساسات ترشد السائقين للأماكن الشاغرة دون أي عناء أو إضاعة للوقت.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>اتصال رأسي مباشر وسلس:</strong>
+                            <p>مصاعد وسلالم بانورامية تنقل الزوار مباشرة من الجراج إلى طوابق المول التجاري والأبراج الإدارية.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>أمان فندقي وبوابات دخول وخروج إلكترونية:</strong>
+                            <p>كاميرات مراقبة متواصلة، أطقم حراسة، وأنظمة متطورة لمكافحة الحرائق وسحب العوادم.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="parking-action-row">
+                    <a href="https://wa.me/201040022670?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EGR%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20District%201%20%D9%88%D9%85%D9%88%D8%A7%D9%82%D9%81%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA." target="_blank" rel="noopener" class="btn-parking-inquire">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>تواصل مع مستشاري EGR للمزيد من التفاصيل</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</section></main><footer class="site-footer">
+</section>
+
+</main>
+
+<footer class="site-footer">
     <div class="site-container">
         <div class="footer-top-grid">
             <div class="footer-col">
@@ -210,10 +351,12 @@
                 <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
                     <strong>EGR للاستثمار والتطوير العقاري</strong> — المطور الرسمي لمشروع ديستركت 1، الوجهة التجارية والإدارية المتكاملة في قلب مدينة قنا.
                 </p>
-                <div style="display: flex; gap: 1rem; color: var(--cyan-300); font-size: 1.2rem;">
-                    <a href="https://district1-eg.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a>
-                    <a href="https://www.facebook.com/District1.eg" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <div class="footer-social-strip">
+                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn facebook-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn instagram-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="footer-social-btn whatsapp-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="footer-social-btn map-btn" title="موقعنا على الخريطة"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="footer-social-btn" title="الموقع الرسمي"><i class="fa-solid fa-globe"></i></a>
                 </div>
             </div>
 
@@ -223,7 +366,6 @@
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="about.html">من نحن (عن EGR)</a></li>
                     <li><a href="district1.html">مشروع ديستركت 1</a></li>
-                    <li><a href="partners.html">شركاء النجاح</a></li>
                     <li><a href="contact.html">تواصل معنا</a></li>
                 </ul>
             </div>
@@ -235,27 +377,32 @@
                     <li><span>الارتفاع: 33.6 متر</span></li>
                     <li><span>إجمالي المباني: 21,667 م²</span></li>
                     <li><span>مواقف السيارات: 6,000 م²</span></li>
-                    <li><span>التسليم: خلال 3 سنوات (2028)</span></li>
+                    <li><span>التسليم: أكتوبر 2028</span></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-col-title">معلومات الاتصال</h4>
+                <h4 class="footer-col-title">معلومات الاتصال والمقر</h4>
                 <ul class="footer-nav-list">
-                    <li><i class="fa-solid fa-phone" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></li>
-                    <li><i class="fa-solid fa-envelope" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></li>
-                    <li><i class="fa-solid fa-location-dot" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> قلب مدينة قنا، محافظة قنا، مصر</li>
-                    <li><i class="fa-solid fa-clock" style="color: var(--cyan-300); margin-left: 0.5rem;"></i> متاح للرد 24/7</li>
+                    <li><a href="tel:01040022670"><i class="fa-solid fa-phone" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></a></li>
+                    <li><a href="mailto:contact@district1-eg.com"><i class="fa-solid fa-envelope" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></a></li>
+                    <li>
+                        <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-map-location-dot" style="color: var(--cyan-400); margin-left: 0.5rem;"></i>
+                            <span>شارع 23 يوليو، برج زمزم - الدور الرابع، قنا، مصر</span>
+                        </a>
+                    </li>
+                    <li><i class="fa-solid fa-clock" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> متاح للرد 24/7</li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
             <div>
-                &copy; 2026 <strong>EGR للاستثمار العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
+                &copy; 2026 <strong>EGR للاستثمار والتطوير العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
             </div>
             <div>
-                المصدر الرسمي الموثق: <a href="https://district1-eg.com/" target="_blank" rel="noopener" style="color: var(--cyan-300);">district1-eg.com</a>
+                المصدر الرسمي الموثق: <a href="https://district1-eg.com/" target="_blank" rel="noopener" style="color: var(--cyan-400);">district1-eg.com</a>
             </div>
         </div>
     </div>

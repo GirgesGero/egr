@@ -48,12 +48,6 @@ $theme_uri = get_template_directory_uri();
                     <p class="cinematic-desc">
                         تقود <strong style="color: #fff;">المجموعة الاقتصادية للاستثمار (EGR)</strong> نهضة الاستثمار والتطوير العقاري بإطلاق صرحها الأيقوني <strong class="sky-blue-text">District 1</strong> بقلب قنا بمساحة 21,667 م² بارتفاع 33.6 متراً وتصميم معماري عالمي.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#floors-section" class="btn-cinematic-pill">
-                            <span>استكشف المشروع</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -75,12 +69,6 @@ $theme_uri = get_template_directory_uri();
                     <p class="cinematic-desc">
                         3 مستويات تجارية متكاملة وهايبر ماركت رئيسي ومجمع مطاعم فاخرة بتدفق جماهيري حيوي ومباشر يضمن أعلى عائد استثماري بالصعيد.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#floors-section" class="btn-cinematic-pill">
-                            <span>الطوابق التجارية</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -102,12 +90,6 @@ $theme_uri = get_template_directory_uri();
                     <p class="cinematic-desc">
                         5 طوابق إدارية وطبية فاخرة بمداخل حصرية ومصاعد ذكية مستقلة تماماً عن حركة المول التجاري لرجال الأعمال والأطباء وكبرى الشركات.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#units-section" class="btn-cinematic-pill">
-                            <span>المكاتب المتاحة</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -129,12 +111,6 @@ $theme_uri = get_template_directory_uri();
                     <p class="cinematic-desc">
                         حل جذري للتكدس المروري بوسط قنا عبر جراجات ذكية على مستويين، مع التزام صارم من <strong style="color: #fff;">شركة EGR</strong> بالتسليم في أكتوبر 2028.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <button class="btn-cinematic-pill open-vip-modal">
-                            <span>حجز استشارة VIP</span>
-                            <i class="fa-solid fa-gem"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>

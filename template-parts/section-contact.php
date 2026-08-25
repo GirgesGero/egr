@@ -70,7 +70,7 @@
                 <div class="faq-item-card">
                     <button class="faq-question-btn" aria-expanded="false">
                         <span class="faq-question-text">
-                            <i class="fa-solid fa-shield-check"></i>
+                            <i class="fa-solid fa-shield-halved"></i>
                             ما هي الضمانات القانونية والإنشائية لالتزام موعد التسليم في أكتوبر 2028؟
                         </span>
                         <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
@@ -141,21 +141,30 @@
                         </div>
                     </a>
 
-                    <div class="contact-quick-card">
+                    <a href="mailto:contact@district1-eg.com" class="contact-quick-card">
                         <div class="quick-icon-circle"><i class="fa-solid fa-envelope"></i></div>
                         <div class="quick-card-meta">
                             <span class="quick-label">البريد الإلكتروني المعتمد</span>
                             <span class="quick-value num-font">contact@district1-eg.com</span>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-quick-card">
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="contact-quick-card">
                         <div class="quick-icon-circle"><i class="fa-solid fa-map-location-dot"></i></div>
                         <div class="quick-card-meta">
-                            <span class="quick-label">الموقع الجغرافي</span>
-                            <span class="quick-value">قلب مدينة قنا، محافظة قنا، مصر</span>
+                            <span class="quick-label">المقر والموقع الجغرافي</span>
+                            <span class="quick-value">شارع 23 يوليو، برج زمزم - الدور 4، قنا</span>
                         </div>
-                    </div>
+                    </a>
+                </div>
+
+                <!-- Official Social Media Channels -->
+                <div style="margin-top: 1.6rem; display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;">
+                    <span style="font-size: 0.85rem; font-weight: 800; color: #64748b;">منصاتنا الرسمية:</span>
+                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn facebook-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn instagram-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="footer-social-btn whatsapp-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="footer-social-btn" title="الموقع الرسمي"><i class="fa-solid fa-globe"></i></a>
                 </div>
             </div>
 

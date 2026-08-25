@@ -37,7 +37,7 @@ function district1_enqueue_scripts() {
     wp_enqueue_style( 'district1-google-fonts', 'https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800;900&family=Outfit:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap', array(), null );
 
     // FontAwesome 6 Icons
-    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', array(), '6.5.1' );
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css', array(), '6.6.0' );
 
     // Main Theme Stylesheet
     wp_enqueue_style( 'district1-main-style', $theme_uri . '/assets/css/theme-style.css', array(), $version );

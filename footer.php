@@ -47,10 +47,12 @@
                 <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
                     <strong>EGR للاستثمار والتطوير العقاري</strong> — المطور الرسمي لمشروع ديستركت 1، الوجهة التجارية والإدارية المتكاملة في قلب مدينة قنا.
                 </p>
-                <div style="display: flex; gap: 1rem; color: var(--cyan-400); font-size: 1.2rem;">
-                    <a href="https://district1-eg.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a>
-                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                <div class="footer-social-strip">
+                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn facebook-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn instagram-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="footer-social-btn whatsapp-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="footer-social-btn map-btn" title="موقعنا على الخريطة"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="footer-social-btn" title="الموقع الرسمي"><i class="fa-solid fa-globe"></i></a>
                 </div>
             </div>
 
@@ -77,11 +79,16 @@
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-col-title">معلومات الاتصال</h4>
+                <h4 class="footer-col-title">معلومات الاتصال والمقر</h4>
                 <ul class="footer-nav-list">
-                    <li><i class="fa-solid fa-phone" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></li>
-                    <li><i class="fa-solid fa-envelope" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></li>
-                    <li><i class="fa-solid fa-location-dot" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> قلب مدينة قنا، محافظة قنا، مصر</li>
+                    <li><a href="tel:01040022670"><i class="fa-solid fa-phone" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></a></li>
+                    <li><a href="mailto:contact@district1-eg.com"><i class="fa-solid fa-envelope" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></a></li>
+                    <li>
+                        <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-map-location-dot" style="color: var(--cyan-400); margin-left: 0.5rem;"></i>
+                            <span>شارع 23 يوليو، برج زمزم - الدور الرابع، قنا، مصر</span>
+                        </a>
+                    </li>
                     <li><i class="fa-solid fa-clock" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> متاح للرد 24/7</li>
                 </ul>
             </div>
@@ -89,7 +96,7 @@
 
         <div class="footer-bottom">
             <div>
-                &copy; <?php echo date('Y'); ?> <strong>EGR للاستثمار العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
+                &copy; <?php echo date('Y'); ?> <strong>EGR للاستثمار والتطوير العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
             </div>
             <div>
                 المصدر الرسمي الموثق: <a href="https://district1-eg.com/" target="_blank" rel="noopener" style="color: var(--cyan-400);">district1-eg.com</a>

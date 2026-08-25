@@ -12,6 +12,10 @@ if ( ! headers_sent() ) {
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( ! is_front_page() ? 'interior-page' : '' ); ?>>
@@ -58,9 +62,9 @@ if ( ! headers_sent() ) {
 </div>
 <?php endif; ?>
 
-<!-- Luxury Glassmorphic Navbar (Always Visible, Responsive & Elegant) -->
+<!-- Luxury Architectural Glassmorphic Navbar -->
 <header id="site-header" class="site-header">
-    <div class="site-container header-inner">
+    <div class="header-inner">
         <!-- Brand Area -->
         <div class="header-brand">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-link" aria-label="الرئيسية EGR">
@@ -69,29 +73,36 @@ if ( ! headers_sent() ) {
             <div class="brand-divider"></div>
             <div class="brand-badge-wrap">
                 <span class="brand-tag">DISTRICT 1</span>
-                <span class="brand-subtag">قلب قنا</span>
+                <span class="brand-subtag"><span class="badge-dot-cyan-pulsing"></span> صرح قنا الأول</span>
             </div>
         </div>
 
         <!-- Navigation Menu -->
         <nav class="header-nav">
             <ul id="nav-links" class="nav-links">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-link">الرئيسية</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="nav-link">من نحن</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/district1/' ) ); ?>" class="nav-link">مشروع ديستركت 1</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="nav-link">اتصل بنا</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-link"><i class="fa-solid fa-house"></i> <span>الرئيسية</span></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="nav-link"><i class="fa-solid fa-building-shield"></i> <span>من نحن</span></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/district1/' ) ); ?>" class="nav-link"><i class="fa-solid fa-gem"></i> <span>مشروع ديستركت 1</span></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="nav-link"><i class="fa-solid fa-envelope"></i> <span>اتصل بنا</span></a></li>
                 <li class="mobile-cta-item">
-                    <button class="btn-cyan open-vip-modal" style="width: 100%; margin-top: 1rem;">
+                    <button class="btn-nav-vip open-vip-modal" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
                         <i class="fa-solid fa-gem"></i>
                         <span>حجز استشارة VIP</span>
                     </button>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="mobile-nav-whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>محادثة واتساب مباشرة</span>
+                    </a>
                 </li>
             </ul>
         </nav>
 
         <!-- Actions -->
         <div class="header-actions">
-            <button class="btn-cyan open-vip-modal desktop-cta">
+            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="nav-quick-whatsapp desktop-cta" aria-label="تواصل عبر واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <button class="btn-nav-vip open-vip-modal desktop-cta">
                 <i class="fa-solid fa-gem"></i>
                 <span>حجز استشارة VIP</span>
             </button>
@@ -101,3 +112,4 @@ if ( ! headers_sent() ) {
         </div>
     </div>
 </header>
+

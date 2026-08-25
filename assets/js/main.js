@@ -201,4 +201,134 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+  // 7. Architectural Masterpiece Stage & Interactive Angle Switcher
+  const angleBtns = document.querySelectorAll('.stage-angle-btn');
+  const stageImages = document.querySelectorAll('.building-stage-img');
+  const stageWrapper = document.getElementById('stage-hologram-wrapper');
+
+  if (angleBtns.length > 0 && stageImages.length > 0) {
+    // Angle Click Switcher
+    angleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetIdx = parseInt(btn.getAttribute('data-target-img') || '0', 10);
+        
+        angleBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        stageImages.forEach((img, idx) => {
+          if (idx === targetIdx) {
+            img.classList.add('active');
+          } else {
+            img.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Auto rotate every 5 seconds if not hovered
+    let autoAngleIdx = 0;
+    let autoAngleInterval = setInterval(() => {
+      autoAngleIdx = (autoAngleIdx + 1) % angleBtns.length;
+      angleBtns[autoAngleIdx].click();
+    }, 5000);
+
+    if (stageWrapper) {
+      stageWrapper.addEventListener('mouseenter', () => clearInterval(autoAngleInterval));
+      stageWrapper.addEventListener('mouseleave', () => {
+        autoAngleInterval = setInterval(() => {
+          autoAngleIdx = (autoAngleIdx + 1) % angleBtns.length;
+          angleBtns[autoAngleIdx].click();
+        }, 5000);
+      });
+
+      // Subtle 3D Mouse Parallax Tilt on Central Building
+      stageWrapper.addEventListener('mousemove', (e) => {
+        const rect = stageWrapper.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const tiltX = (y / rect.height) * -12;
+        const tiltY = (x / rect.width) * 12;
+
+        const activeImg = stageWrapper.querySelector('.building-stage-img.active');
+        if (activeImg) {
+          activeImg.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.04)`;
+        }
+      });
+
+      stageWrapper.addEventListener('mouseleave', () => {
+        const activeImg = stageWrapper.querySelector('.building-stage-img.active');
+        if (activeImg) {
+          activeImg.style.transform = '';
+        }
+      });
+    }
+  }
+
+  // 7.5 Sector Cards Interactive Synchronizer with 3D Building Stage
+  const sectorCards = document.querySelectorAll('.sector-interactive-card');
+  if (sectorCards.length > 0 && angleBtns && angleBtns.length > 0) {
+    const sectorAngleMap = {
+      'commercial': 2, // Podium & Entrance
+      'admin': 0,      // Main Perspective
+      'parking': 1     // Facade Perspective
+    };
+
+    sectorCards.forEach(card => {
+      card.addEventListener('click', () => {
+        sectorCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
+        const sectorKey = card.getAttribute('data-sector');
+        if (sectorKey && sectorAngleMap[sectorKey] !== undefined && angleBtns[sectorAngleMap[sectorKey]]) {
+          angleBtns[sectorAngleMap[sectorKey]].click();
+        }
+      });
+    });
+  }
+
+  // 8. Animated Numbers Counter (Counter Up on Scroll)
+  const counterElements = document.querySelectorAll('.spec-counter-num');
+  if (counterElements.length > 0 && 'IntersectionObserver' in window) {
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const targetVal = parseFloat(el.getAttribute('data-target') || '0');
+          const isDecimal = targetVal % 1 !== 0;
+          const duration = 1800; // ms
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const easeProgress = 1 - Math.pow(1 - progress, 3);
+            const currentVal = targetVal * easeProgress;
+
+            if (isDecimal) {
+              el.textContent = currentVal.toFixed(1);
+            } else {
+              el.textContent = Math.floor(currentVal).toLocaleString();
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              if (isDecimal) {
+                el.textContent = targetVal.toFixed(1);
+              } else {
+                el.textContent = targetVal.toLocaleString();
+              }
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    counterElements.forEach(el => counterObserver.observe(el));
+  }
 });

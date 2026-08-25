@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700;800;900&family=Outfit:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FontAwesome 6.6.0 -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="assets/css/theme-style.css">
 </head>
@@ -55,31 +56,47 @@
     </div>
 </div>
 
-<!-- Header -->
+<!-- Luxury Architectural Glassmorphic Navbar -->
 <header id="site-header" class="site-header">
-    <div class="site-container header-inner">
+    <div class="header-inner">
+        <!-- Brand Area -->
         <div class="header-brand">
-            <a href="index.html" class="brand-link">
+            <a href="index.html" class="brand-link" aria-label="الرئيسية EGR">
                 <img src="assets/images/egr-logo.png" alt="EGR Real Estate" class="brand-logo">
             </a>
             <div class="brand-divider"></div>
             <div class="brand-badge-wrap">
                 <span class="brand-tag">DISTRICT 1</span>
-                <span class="brand-subtag">قلب قنا</span>
+                <span class="brand-subtag"><span class="badge-dot-cyan-pulsing"></span> صرح قنا الأول</span>
             </div>
         </div>
 
+        <!-- Navigation Menu -->
         <nav class="header-nav">
             <ul id="nav-links" class="nav-links">
-                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
-                <li><a href="about.html" class="nav-link">من نحن</a></li>
-                <li><a href="district1.html" class="nav-link">مشروع ديستركت 1</a></li>
-                                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> <span>الرئيسية</span></a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa-solid fa-building-shield"></i> <span>من نحن</span></a></li>
+                <li><a href="district1.html" class="nav-link"><i class="fa-solid fa-gem"></i> <span>مشروع ديستركت 1</span></a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> <span>اتصل بنا</span></a></li>
+                <li class="mobile-cta-item">
+                    <button class="btn-nav-vip open-vip-modal" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>حجز استشارة VIP</span>
+                    </button>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="mobile-nav-whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>محادثة واتساب مباشرة</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
+        <!-- Actions -->
         <div class="header-actions">
-            <button class="btn-cyan open-vip-modal">
+            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="nav-quick-whatsapp desktop-cta" aria-label="تواصل عبر واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <button class="btn-nav-vip open-vip-modal desktop-cta">
                 <i class="fa-solid fa-gem"></i>
                 <span>حجز استشارة VIP</span>
             </button>
@@ -136,12 +153,6 @@
                     <p class="cinematic-desc">
                         تقود <strong style="color: #fff;">المجموعة الاقتصادية للاستثمار (EGR)</strong> نهضة الاستثمار والتطوير العقاري بإطلاق صرحها الأيقوني <strong class="sky-blue-text">District 1</strong> بقلب قنا بمساحة 21,667 م² بارتفاع 33.6 متراً وتصميم معماري عالمي.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#floors-section" class="btn-cinematic-pill">
-                            <span>استكشف المشروع</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -163,12 +174,6 @@
                     <p class="cinematic-desc">
                         3 مستويات تجارية متكاملة وهايبر ماركت رئيسي ومجمع مطاعم فاخرة بتدفق جماهيري حيوي ومباشر يضمن أعلى عائد استثماري بالصعيد.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#floors-section" class="btn-cinematic-pill">
-                            <span>الطوابق التجارية</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -190,12 +195,6 @@
                     <p class="cinematic-desc">
                         5 طوابق إدارية وطبية فاخرة بمداخل حصرية ومصاعد ذكية مستقلة تماماً عن حركة المول التجاري لرجال الأعمال والأطباء وكبرى الشركات.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <a href="#units-section" class="btn-cinematic-pill">
-                            <span>المكاتب المتاحة</span>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -217,12 +216,6 @@
                     <p class="cinematic-desc">
                         حل جذري للتكدس المروري بوسط قنا عبر جراجات ذكية على مستويين، مع التزام صارم من <strong style="color: #fff;">شركة EGR</strong> بالتسليم في أكتوبر 2028.
                     </p>
-                    <div class="cinematic-action-wrap">
-                        <button class="btn-cinematic-pill open-vip-modal">
-                            <span>حجز استشارة VIP</span>
-                            <i class="fa-solid fa-gem"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -718,105 +711,170 @@
 </section>
 
 
-<section id="location-section" class="theme-section location-section">
+<section id="location-section" class="theme-section location-section-v3">
     <div class="site-container">
         <!-- Section Header -->
-        <div class="section-title-wrap text-center-wrap">
+        <div class="section-title-wrap text-center-wrap" style="margin-bottom: 2.8rem;">
             <div class="section-badge luxury-badge-glow">
                 <span class="badge-dot-cyan-pulsing"></span>
-                <span>الموقع الاستراتيجي الأكثر تميزاً</span>
+                <span>الموقع الاستراتيجي // تقاطع شرايين الاستثمار</span>
             </div>
             <h2 class="section-title luxury-main-title">
-                في قلب قنا النابض <span class="cyan-text">حيث تلتقي شرايين الاستثمار والحياة</span>
+                في قلب قنا النابض <span class="cyan-text">على بُعد دقائق من كافة معالم ومراكز المحافظة</span>
             </h2>
             <p class="section-desc luxury-sub-desc">
-                اختيار موقع District 1 لم يكن صدفة؛ بل استند إلى دراسة تدفق مروري واقتصادي عميقة استهدفت النقطة الأعلى كثافة ورواجاً في صعيد مصر، مع حل جذري لمعضلة مواقف السيارات.
+                موقع استثنائي في شارع 23 يوليو (أرض نقابة الزراعيين سابقاً) يضع مشروعك في بؤرة الكثافة المرورية والحركة الاقتصادية الأكبر بصعيد مصر.
             </p>
         </div>
 
-        <div class="location-grid-v2">
-            <!-- 1. Right Column: Strategic Landmark Proximity Matrix -->
-            <div class="location-landmarks-v2">
-                <div class="landmark-card-v2">
-                    <div class="landmark-icon-wrap">
-                        <i class="fa-solid fa-train-subway"></i>
-                    </div>
-                    <div class="landmark-info">
-                        <div class="landmark-head-row">
-                            <h4 class="landmark-title">ميدان ومحطة قطارات قنا الرئيسية</h4>
-                            <span class="landmark-time-chip">3 دقائق فقط</span>
-                        </div>
-                        <p class="landmark-desc">
-                            شريان الربط مع كافة محافظات الصعيد والقاهرة، مع أعلى معدل تدفق يومي للركاب والمتسوقين يتجاوز 45,000 زائر يومياً.
-                        </p>
-                    </div>
+        <!-- 1. Top 4 Proximity Radar Cards Matrix -->
+        <div class="location-top-matrix-grid">
+            <!-- Landmark 1 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-train-subway"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 3 دقائق</span>
                 </div>
-
-                <div class="landmark-card-v2">
-                    <div class="landmark-icon-wrap">
-                        <i class="fa-solid fa-landmark-dome"></i>
-                    </div>
-                    <div class="landmark-info">
-                        <div class="landmark-head-row">
-                            <h4 class="landmark-title">ديوان عام محافظة قنا والمجمع الحكومي</h4>
-                            <span class="landmark-time-chip">5 دقائق فقط</span>
-                        </div>
-                        <p class="landmark-desc">
-                            مركز اتخاذ القرار والمصالح الإدارية والوزارات والبنوك المركزية، مما يضمن تدفقاً مستمراً للمكاتب الإدارية والعيادات.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="landmark-card-v2">
-                    <div class="landmark-icon-wrap">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div class="landmark-info">
-                        <div class="landmark-head-row">
-                            <h4 class="landmark-title">جامعة جنوب الوادي والمستشفيات الجامعية</h4>
-                            <span class="landmark-time-chip">8 دقائق فقط</span>
-                        </div>
-                        <p class="landmark-desc">
-                            مجتمع أكاديمي وبحثي ضخم يضم أكثر من 65,000 طالب وأكاديمي وموظف، يشكلون القوة الشرائية الأقوى للعلامات التجارية والمطاعم.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="landmark-card-v2">
-                    <div class="landmark-icon-wrap">
-                        <i class="fa-solid fa-water"></i>
-                    </div>
-                    <div class="landmark-info">
-                        <div class="landmark-head-row">
-                            <h4 class="landmark-title">كورنيش النيل والممشى السياحي الترفيهي</h4>
-                            <span class="landmark-time-chip">4 دقائق فقط</span>
-                        </div>
-                        <p class="landmark-desc">
-                            الوجهة الترفيهية الأولى للعائلات والنزهات المسائية، مما يجعل صرح District 1 المحطة الطبيعية للتسوق وتناول الطعام.
-                        </p>
-                    </div>
+                <h4 class="matrix-card-title">ميدان ومحطة قطارات قنا</h4>
+                <p class="matrix-card-desc">شريان ربط الصعيد بالقاهرة بتدفق يتجاوز <strong>45,000 مسافر ومتسوق يومياً</strong>.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-users"></i>
+                    <span>التدفق الجماهيري الأعلى</span>
                 </div>
             </div>
 
-            <!-- 2. Left Column: Interactive Visual Showcase & Parking Solution Highlight -->
-            <div class="location-visual-card-v2">
-                <div class="location-img-wrap">
-                    <img src="assets/images/district1-elevation-front-hd.jpg" alt="District 1 Architectural Location" class="location-facade-img-v2">
-                    <div class="location-live-radar-badge">
+            <!-- Landmark 2 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-landmark-dome"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 5 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">المجمع الحكومي والمحافظة</h4>
+                <p class="matrix-card-desc">مركز اتخاذ القرار والوزارات والبنوك، لضمان طلب دائم على المكاتب والعيادات.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>المقرات الإدارية والمصرفية</span>
+                </div>
+            </div>
+
+            <!-- Landmark 3 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-water"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 4 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">كورنيش وممشى النيل السياحي</h4>
+                <p class="matrix-card-desc">المتنفس الترفيهي الأول للعائلات ورواد المطاعم والكافيهات والتسوق المسائي.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <span>الوجهة الترفيهية الأولى</span>
+                </div>
+            </div>
+
+            <!-- Landmark 4 -->
+            <div class="location-matrix-card">
+                <div class="matrix-card-top">
+                    <div class="matrix-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span class="matrix-time-badge"><i class="fa-regular fa-clock"></i> 8 دقائق</span>
+                </div>
+                <h4 class="matrix-card-title">جامعة جنوب الوادي والمستشفيات</h4>
+                <p class="matrix-card-desc">كتلة استهلاكية وأكاديمية ضخمة تضم <strong>+65,000 طالب وأكاديمي</strong> وطبيب.</p>
+                <div class="matrix-metric-pill">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>القوة الشرائية الأقوى</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Interactive Panoramic Visual & Smart Parking Cockpit Grid -->
+        <div class="location-interactive-cockpit-grid">
+            <!-- Right Column: Visual Facade Display & Direct Map Navigation -->
+            <div class="location-panoramic-card">
+                <div class="panoramic-img-wrap">
+                    <img src="assets/images/district1-elevation-front-hd.jpg" alt="District 1 Panoramic Facade" class="panoramic-img">
+                    <div class="panoramic-radar-hud">
                         <span class="radar-pulsing-circle"></span>
-                        <span class="radar-title-text">الموقع المعتمد: تقاطع الشرايين الحيوية – قلب قنا</span>
+                        <span>شارع 23 يوليو // قلب قنا النابض</span>
+                    </div>
+                    <div class="panoramic-gps-badge">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>26.1558° N, 32.7160° E</span>
                     </div>
                 </div>
 
-                <div class="location-feature-bottom-card">
-                    <div class="feature-badge-row">
-                        <span class="feature-tag-cyan"><i class="fa-solid fa-square-parking"></i> حل أزمة المواقف</span>
-                        <span class="feature-tag-gold"><i class="fa-solid fa-shield-halved"></i> أمان وحراسة 24/7</span>
+                <div class="panoramic-action-footer">
+                    <div class="location-address-wrap">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>شارع 23 يوليو، برج زمزم — الدور الرابع، قنا، مصر</span>
                     </div>
-                    <h3 class="feature-box-title">6,000 م² مواقف سيارات تحت الأرض (B1 + B2)</h3>
-                    <p class="feature-box-desc">
-                        تغلبنا على العائق الأكبر في وسط المدينة بتوفير طابقين كاملين لمواقف السيارات الذكية تسع مئات المركبات مع نظام توجيه إلكتروني ذكي، ليتمتع زوارك وعملاؤك بتجربة وصول مريحة وممتعة دون أي عناء.
-                    </p>
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="btn-open-map-action">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>فتح الموقع على الخريطة</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Left Column: 6,000 m² Smart Parking & Infrastructure Cockpit -->
+            <div class="parking-smart-cockpit-card">
+                <div class="parking-header-row">
+                    <div class="parking-title-group">
+                        <span class="parking-kicker-badge"><i class="fa-solid fa-square-parking"></i> حل هندسي جذري</span>
+                        <h3 class="parking-main-title">منظومة المواقف الذكية (6,000 م²)</h3>
+                    </div>
+                    <div class="parking-levels-chip">B1 + B2 تحت الأرض</div>
+                </div>
+
+                <div class="parking-kpi-row">
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">6,000</span>
+                        <span class="parking-kpi-unit">م² مسطح الجراج</span>
+                    </div>
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">2</span>
+                        <span class="parking-kpi-unit">طابقين تحت الأرض</span>
+                    </div>
+                    <div class="parking-kpi-item">
+                        <span class="parking-kpi-num num-font">24/7</span>
+                        <span class="parking-kpi-unit">حراسة وتوجيه ذكي</span>
+                    </div>
+                </div>
+
+                <ul class="parking-features-checklist">
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>سعة استيعابية ضخمة لمئات المركبات:</strong>
+                            <p>تقضي تماماً على معضلة التكدس المروري وتوفر لعملائك وزوارك راحة فورية عند الوصول.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>نظام توجيه وحجز إلكتروني ذكي:</strong>
+                            <p>شاشات رقمية وحساسات ترشد السائقين للأماكن الشاغرة دون أي عناء أو إضاعة للوقت.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>اتصال رأسي مباشر وسلس:</strong>
+                            <p>مصاعد وسلالم بانورامية تنقل الزوار مباشرة من الجراج إلى طوابق المول التجاري والأبراج الإدارية.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>أمان فندقي وبوابات دخول وخروج إلكترونية:</strong>
+                            <p>كاميرات مراقبة متواصلة، أطقم حراسة، وأنظمة متطورة لمكافحة الحرائق وسحب العوادم.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="parking-action-row">
+                    <a href="https://wa.me/201040022670?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EGR%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20District%201%20%D9%88%D9%85%D9%88%D8%A7%D9%82%D9%81%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA." target="_blank" rel="noopener" class="btn-parking-inquire">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>تواصل مع مستشاري EGR للمزيد من التفاصيل</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -833,72 +891,96 @@
                 <span>الجدول الزمني والالتزام الإنشائي الميداني</span>
             </div>
             <h2 class="section-title luxury-main-title">
-                خارطة الطريق الإنشائية <span class="cyan-text">وصولاً للتشغيل والتسليم في أكتوبر 2028</span>
+                خارطة الطريق الإنشائية <span class="cyan-text">والتسليم والافتتاح في أكتوبر 2028</span>
             </h2>
             <p class="section-desc luxury-sub-desc">
-                التزامنا بمواعيد التسليم ليس مجرد وعد، بل خطة هندسية تنفيذية دقيقة يقودها كبار استشاريي مصر، مع تقارير إنجاز ربع سنوية موثقة لكافة المستثمرين ورواد الأعمال.
+                خطة تنفيذية دقيقة يقودها كبار استشاريي مصر بمواعيد ملزمة وتقارير إنجاز ربع سنوية موثقة لجميع المستثمرين.
             </p>
         </div>
 
         <!-- 4 Fast-Track Timeline Milestone Cards -->
         <div class="timeline-bespoke-track">
+            <!-- Milestone 01 -->
             <div class="timeline-step-card-v2 completed-step">
                 <div class="step-badge-row">
                     <span class="step-num-pill">المرحلة 01</span>
                     <span class="step-status-chip chip-done"><i class="fa-solid fa-circle-check"></i> تم الإنجاز 100%</span>
                 </div>
-                <h4 class="step-card-title">الأساسات العميقة وجدار العزل الهيدروليكي</h4>
-                <p class="step-card-desc">
-                    الانتهاء من أعمال الحفر العميق لطابقي الجراج (B1 + B2 بمساحة 6,000 م²)، وتثبيت الخوازيق الخرسانية الساندة وعزل الرطوبة والمياه الجوفية وفق أعلى مواصفات الأمان الجيوتقني.
-                </p>
+                <div class="step-head-wrap">
+                    <div class="step-icon-round done-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                    <h4 class="step-card-title">الأساسات العميقة وجدار العزل</h4>
+                </div>
+                <ul class="step-points-list">
+                    <li><i class="fa-solid fa-check"></i> حفر طابقي الجراج (B1 + B2) بمساحة 6,000 م².</li>
+                    <li><i class="fa-solid fa-check"></i> تثبيت الخوازيق الساندة وجدار العزل الهيدروليكي.</li>
+                    <li><i class="fa-solid fa-check"></i> مطابقة تامة لكود الأمان الجيوتقني المعتمد.</li>
+                </ul>
                 <div class="step-date-footer">
                     <i class="fa-solid fa-calendar-check"></i>
                     <span>الربع الأول 2025 // معتمدة رسمياً</span>
                 </div>
             </div>
 
+            <!-- Milestone 02 -->
             <div class="timeline-step-card-v2 active-step">
                 <div class="step-badge-row">
                     <span class="step-num-pill">المرحلة 02</span>
-                    <span class="step-status-chip chip-active"><i class="fa-solid fa-spinner fa-spin"></i> جاري التنفيذ الميداني</span>
+                    <span class="step-status-chip chip-active"><i class="fa-solid fa-spinner fa-spin"></i> جاري التنفيذ</span>
                 </div>
-                <h4 class="step-card-title">الهيكل الخرساني والبوديوم التجاري (G + 3)</h4>
-                <p class="step-card-desc">
-                    صب الأدوار الأرضية ومستويات المول التجاري الثلاثة والشرفات البانورامية المعلقة، وتجهيز مداخل الهايبر ماركت والمصاعد والسلالم الكهربائية ومسارات التوزيع الذكية.
-                </p>
+                <div class="step-head-wrap">
+                    <div class="step-icon-round active-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                    <h4 class="step-card-title">الهيكل والبوديوم التجاري</h4>
+                </div>
+                <ul class="step-points-list">
+                    <li><i class="fa-solid fa-check"></i> صب الهيكل الخرساني للأدوار التجارية (G + 3).</li>
+                    <li><i class="fa-solid fa-check"></i> تجهيز مساحات الهايبر ماركت والتراسات المعلقة.</li>
+                    <li><i class="fa-solid fa-check"></i> تأسيس مسارات السلالم والمصاعد البانورامية.</li>
+                </ul>
                 <div class="step-date-footer active-date">
                     <i class="fa-solid fa-helmet-safety"></i>
                     <span>2025 // وتيرة عمل متسارعة</span>
                 </div>
             </div>
 
+            <!-- Milestone 03 -->
             <div class="timeline-step-card-v2 planned-step">
                 <div class="step-badge-row">
                     <span class="step-num-pill">المرحلة 03</span>
-                    <span class="step-status-chip chip-planned"><i class="fa-solid fa-clock"></i> مجدول وفق الخطة</span>
+                    <span class="step-status-chip chip-planned"><i class="fa-regular fa-clock"></i> مجدول وفق الخطة</span>
                 </div>
-                <h4 class="step-card-title">الأبراج الإدارية وواجهات الترافرتين والزجاج</h4>
-                <p class="step-card-desc">
-                    رفع الأبراج الإدارية والطبية حتى الطابق الثامن (بارتفاع 33.6 متراً)، وتركيب واجهات الزجاج المزدوج العازل للصوت والحرارة وحجر الترافرتين الإيطالي ومصفوفة كواسر الشمس.
-                </p>
+                <div class="step-head-wrap">
+                    <div class="step-icon-round planned-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+                    <h4 class="step-card-title">الأبراج والواجهات المعمارية</h4>
+                </div>
+                <ul class="step-points-list">
+                    <li><i class="fa-solid fa-check"></i> رفع الأبراج حتى الطابق الثامن (33.6 متراً).</li>
+                    <li><i class="fa-solid fa-check"></i> تركيب حجر الترافرتين والزجاج المزدوج العازل.</li>
+                    <li><i class="fa-solid fa-check"></i> تأسيس شبكات FTTH والتكييف المركزي.</li>
+                </ul>
                 <div class="step-date-footer">
                     <i class="fa-solid fa-calendar-days"></i>
-                    <span>2026 – 2027 // الإكساء والهندسة المعمارية</span>
+                    <span>2026 – 2027 // الإكساء والهندسة</span>
                 </div>
             </div>
 
+            <!-- Milestone 04 -->
             <div class="timeline-step-card-v2 grand-target-step">
                 <div class="step-badge-row">
                     <span class="step-num-pill gold-num">المرحلة 04</span>
-                    <span class="step-status-chip chip-gold"><i class="fa-solid fa-flag-checkered"></i> الموعد النهائي للتشغيل</span>
+                    <span class="step-status-chip chip-gold"><i class="fa-solid fa-flag-checkered"></i> الموعد النهائي</span>
                 </div>
-                <h4 class="step-card-title">التشغيل الذكي والافتتاح والتسليم الكبير</h4>
-                <p class="step-card-desc">
-                    إطلاق منظومة إدارة المباني الذكية (BMS) واختبارات السلامة ومكافحة الحريق، وتسليم الوحدات التجارية والإدارية للملاك والبراندات، والافتتاح الرسمي للصرح أمام جمهور الصعيد.
-                </p>
+                <div class="step-head-wrap">
+                    <div class="step-icon-round gold-icon"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="step-card-title">التشغيل الذكي والتسليم الكبير</h4>
+                </div>
+                <ul class="step-points-list">
+                    <li><i class="fa-solid fa-check"></i> إطلاق منظومة إدارة المباني الذكية (BMS).</li>
+                    <li><i class="fa-solid fa-check"></i> تسليم الوحدات التجارية والإدارية للملاك.</li>
+                    <li><i class="fa-solid fa-check"></i> الافتتاح الرسمي الأضخم في صعيد مصر.</li>
+                </ul>
                 <div class="step-date-footer gold-date">
                     <i class="fa-solid fa-champagne-glasses"></i>
-                    <span>أكتوبر 2028 // موعد التسليم والافتتاح الرسمي</span>
+                    <span>أكتوبر 2028 // التسليم والافتتاح</span>
                 </div>
             </div>
         </div>
@@ -912,17 +994,17 @@
         <div class="section-title-wrap text-center-wrap">
             <div class="section-badge luxury-badge-glow">
                 <span class="badge-dot-cyan-pulsing"></span>
-                <span>فريق قوي .. وراء كل نجاح رؤية</span>
+                <span>تحالف الكبار // وراء كل نجاح رؤية</span>
             </div>
             <h2 class="section-title luxury-main-title">
-                شركاء النجاح <span class="cyan-text">والتحالف الاستراتيجي وراء District 1</span>
+                التحالف الاستراتيجي <span class="cyan-text">وقلاع التطوير والهندسة لصرح District 1</span>
             </h2>
             <p class="section-desc luxury-sub-desc">
-                تحالف من كبرى قلاع التطوير العقاري والهندسة المعمارية والإنشائية والمقاولات العامة في مصر، لضمان أعلى معايير الجودة والالتزام الهندسي حتى التسليم في أكتوبر 2028.
+                تحالف من كبرى قلاع الاستثمار والاستشارات الهندسية والمقاولات العامة في مصر لضمان أعلى معايير الجودة حتى الافتتاح في أكتوبر 2028.
             </p>
         </div>
 
-        <!-- 4 Titans Exact Grid Matching Reference -->
+        <!-- 4 Titans Structured Showcase Grid -->
         <div class="partners-exact-showcase-grid">
             <!-- 1. EGR Real Estate (المطور العقاري) -->
             <div class="partner-bespoke-card">
@@ -934,12 +1016,14 @@
                     </div>
 
                     <div class="partner-body-content">
-                        <span class="partner-role-badge">المطور العقاري والمستثمر الرئيسي</span>
-                        <h3 class="partner-main-heading">شركة المجموعة الاقتصادية للاستثمارات العقارية – EGR</h3>
+                        <span class="partner-role-badge">المطور والمستثمر الرئيسي</span>
+                        <h3 class="partner-main-heading">المجموعة الاقتصادية للاستثمارات (EGR)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            تعد من الأسماء الموثوقة في مجال التطوير العقاري بصعيد مصر. تأسست على يد <strong>السيد ياسر أحمد سليمـان</strong>، أحد أبرز المستثمرين في <strong>محافظة قنا</strong>، وقد بنت الشركة محفظة متنوعة تشمل قطاعات <strong>العقارات</strong> و<strong>الأغذية والمشروبات</strong>.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-user-tie"></i> <strong>القيادة:</strong> السيد ياسر أحمد سليمان (رائد الاستثمار بقنا).</li>
+                            <li><i class="fa-solid fa-chart-line"></i> <strong>المجال:</strong> ريادة التطوير العقاري والأغذية والمشروبات بالصعيد.</li>
+                            <li><i class="fa-solid fa-gem"></i> <strong>المسؤولية:</strong> التمويل الشامل، التطوير، وإدارة الأصول.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
@@ -947,13 +1031,10 @@
                             <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
+                            <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -972,11 +1053,13 @@
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">الاستشاري العام والمصمم المعماري</span>
-                        <h3 class="partner-main-heading">شركة إم سي جي – مجموعة مروان للاستشارات</h3>
+                        <h3 class="partner-main-heading">مجموعة مروان للاستشارات الهندسية (MCG)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هي <strong>الاستشاري العام والمصمم المعماري</strong> للمشروع. تمتلك الشركة أكثر من <strong>أربعة عقود من الخبرة</strong> في مجالات <strong>العمارة، التصميم الداخلي، وإدارة المشروعات</strong>، مما جعلها اسماً موثوقاً في قطاع التصميم والتطوير العقاري في مصر. تأسست الشركة على يد <strong>المهندس المعماري طارق حسين</strong>.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-award"></i> <strong>الخبرة:</strong> أكثر من 40 عاماً في العمارة وإدارة المشروعات الكبرى.</li>
+                            <li><i class="fa-solid fa-compass-drafting"></i> <strong>المؤسس:</strong> المهندس المعماري طارق حسين.</li>
+                            <li><i class="fa-solid fa-cubes"></i> <strong>المسؤولية:</strong> التصميم المعماري الإبداعي وتوزيع المساحات الذكية.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
@@ -986,9 +1069,6 @@
                             </a>
                             <a href="https://www.youtube.com/@mcgconsultants1" target="_blank" rel="noopener" class="social-circle-btn" aria-label="YouTube">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/mcg-consultant/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                             <a href="https://www.instagram.com/mcg_consultant/?hl=en" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
@@ -1009,26 +1089,25 @@
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">المقاول العام والتنفيذي</span>
-                        <h3 class="partner-main-heading">شركة الصعيد العامة للمقاولات والاستثمار العقاري – SCC</h3>
+                        <h3 class="partner-main-heading">شركة الصعيد العامة للمقاولات (SCC)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هي <strong>المقاول العام</strong> للمشروع. تأسست الشركة لتعمل في نطاق واسع يشمل <strong>أعمال المقاولات العامة والخاصة</strong>، بما في ذلك <strong>البنية التحتية والمرافق العامة والمصارف المغطاة</strong>. ويمتد نطاق خبرتها ليشمل <strong>إدارة واستخراج مواد البناء</strong>، وتشغيل <strong>المحاجر</strong>، وإنشاء <strong>المصانع والورش</strong> التي تدعم مشروعاتها أو تخدم أطرافاً أخرى.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-building-flag"></i> <strong>الكيان:</strong> إحدى قلاع المقاولات والبنية التحتية والمشروعات القومية.</li>
+                            <li><i class="fa-solid fa-truck-monster"></i> <strong>الإمكانيات:</strong> أسطول معدات ومحاجر ومصانع خرسانية كبرى.</li>
+                            <li><i class="fa-solid fa-helmet-safety"></i> <strong>المسؤولية:</strong> التنفيذ الإنشائي الميداني وضمان أسرع معدلات الإنجاز.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
                         <div class="partner-social-row">
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="X / Twitter">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
+                            <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Website">
+                                <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
                     </div>
@@ -1047,26 +1126,25 @@
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">الاستشاري الإنشائي الهندسي</span>
-                        <h3 class="partner-main-heading">مكتب سكن للاستشارات الهندسية</h3>
+                        <h3 class="partner-main-heading">مكتب سكن للاستشارات الهندسية (SAKAN)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هو <strong>الاستشاري الإنشائي</strong> للمشروع. تأسس على يد <strong>الأستاذ الدكتور حداد سعيد حداد</strong>، أحد الخبراء المرموقين في <strong>المركز القومي لبحوث الإسكان والبناء</strong>، ويتميز المكتب بخبرة علمية وفنية عميقة في مجال الهندسة الإنشائية وتصميم الهياكل الخرسانية المقاومة للأحمال والزلازل.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-graduation-cap"></i> <strong>القيادة:</strong> أ.د. حداد سعيد حداد (خبير المركز القومي للبحوث).</li>
+                            <li><i class="fa-solid fa-shield-halved"></i> <strong>التخصص:</strong> تصميم الهياكل الخرسانية المقاومة للأحمال والزلازل.</li>
+                            <li><i class="fa-solid fa-stamp"></i> <strong>المسؤولية:</strong> الحسابات الإنشائية الدقيقة وضبط الجودة وكود الأمان.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
                         <div class="partner-social-row">
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="X / Twitter">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
+                            <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Website">
+                                <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
                     </div>
@@ -1076,10 +1154,10 @@
     </div>
 </section>
 
-
+<!-- Contact & Investor FAQ Section -->
 <section id="contact-section" class="theme-section contact-section-v2" style="background-color: var(--bg-secondary);">
     <div class="site-container">
-        <!-- 1. Top Section: Investor FAQ (المنطق البشري للرد على أسئلة واعتراضات المستثمرين) -->
+        <!-- 1. Top Section: Investor FAQ -->
         <div class="faq-section-wrapper">
             <div class="section-title-wrap text-center-wrap" style="margin-bottom: 2.8rem;">
                 <div class="section-badge luxury-badge-glow">
@@ -1141,7 +1219,7 @@
                 <div class="faq-item-card">
                     <button class="faq-question-btn" aria-expanded="false">
                         <span class="faq-question-text">
-                            <i class="fa-solid fa-shield-check"></i>
+                            <i class="fa-solid fa-shield-halved"></i>
                             ما هي الضمانات القانونية والإنشائية لالتزام موعد التسليم في أكتوبر 2028؟
                         </span>
                         <span class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
@@ -1212,21 +1290,30 @@
                         </div>
                     </a>
 
-                    <div class="contact-quick-card">
+                    <a href="mailto:contact@district1-eg.com" class="contact-quick-card">
                         <div class="quick-icon-circle"><i class="fa-solid fa-envelope"></i></div>
                         <div class="quick-card-meta">
                             <span class="quick-label">البريد الإلكتروني المعتمد</span>
                             <span class="quick-value num-font">contact@district1-eg.com</span>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-quick-card">
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="contact-quick-card">
                         <div class="quick-icon-circle"><i class="fa-solid fa-map-location-dot"></i></div>
                         <div class="quick-card-meta">
-                            <span class="quick-label">الموقع الجغرافي</span>
-                            <span class="quick-value">قلب مدينة قنا، محافظة قنا، مصر</span>
+                            <span class="quick-label">المقر والموقع الجغرافي</span>
+                            <span class="quick-value">شارع 23 يوليو، برج زمزم - الدور 4، قنا</span>
                         </div>
-                    </div>
+                    </a>
+                </div>
+
+                <!-- Official Social Media Channels -->
+                <div style="margin-top: 1.6rem; display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;">
+                    <span style="font-size: 0.85rem; font-weight: 800; color: #64748b;">منصاتنا الرسمية:</span>
+                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn facebook-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn instagram-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="footer-social-btn whatsapp-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="footer-social-btn" title="الموقع الرسمي"><i class="fa-solid fa-globe"></i></a>
                 </div>
             </div>
 
@@ -1269,6 +1356,76 @@
                 </form>
             </div>
         </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Site Footer -->
+<footer class="site-footer">
+    <div class="site-container">
+        <div class="footer-top-grid">
+            <div class="footer-col">
+                <img src="assets/images/egr-logo-white.png" alt="EGR Real Estate" class="footer-logo">
+                <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    <strong>EGR للاستثمار والتطوير العقاري</strong> — المطور الرسمي لمشروع ديستركت 1، الوجهة التجارية والإدارية المتكاملة في قلب مدينة قنا.
+                </p>
+                <div class="footer-social-strip">
+                    <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn facebook-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="footer-social-btn instagram-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="footer-social-btn whatsapp-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener" class="footer-social-btn map-btn" title="موقعنا على الخريطة"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="footer-social-btn" title="الموقع الرسمي"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">الصفحات الرئيسية</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن (عن EGR)</a></li>
+                    <li><a href="district1.html">مشروع ديستركت 1</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">مشروع District 1</h4>
+                <ul class="footer-nav-list">
+                    <li><span>مساحة الأرض: 3,200 م²</span></li>
+                    <li><span>الارتفاع: 33.6 متر</span></li>
+                    <li><span>إجمالي المباني: 21,667 م²</span></li>
+                    <li><span>مواقف السيارات: 6,000 م²</span></li>
+                    <li><span>التسليم: أكتوبر 2028</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">معلومات الاتصال والمقر</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="tel:01040022670"><i class="fa-solid fa-phone" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">01040022670</span></a></li>
+                    <li><a href="mailto:contact@district1-eg.com"><i class="fa-solid fa-envelope" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> <span class="num-font">contact@district1-eg.com</span></a></li>
+                    <li>
+                        <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=%D8%B4%D8%A7%D8%B1%D8%B9%2023%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%D8%8C%20%D8%A8%D8%B1%D8%AC%20%D8%B2%D9%85%D8%B2%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%2C%20Qena%2C%20Egypt" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-map-location-dot" style="color: var(--cyan-400); margin-left: 0.5rem;"></i>
+                            <span>شارع 23 يوليو، برج زمزم - الدور الرابع، قنا، مصر</span>
+                        </a>
+                    </li>
+                    <li><i class="fa-solid fa-clock" style="color: var(--cyan-400); margin-left: 0.5rem;"></i> متاح للرد 24/7</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>
+                &copy; 2026 <strong>EGR للاستثمار والتطوير العقاري</strong> — جميع الحقوق محفوظة لمشروع District 1.
+            </div>
+            <div>
+                المصدر الرسمي الموثق: <a href="https://district1-eg.com/" target="_blank" rel="noopener" style="color: var(--cyan-400);">district1-eg.com</a>
+            </div>
+        </div>
+    </div>
+</footer>iv>
     </div>
 </section>تاذ الدكتور حداد سعيد حداد</strong>، الخبير المرموق بالمركز القومي لبحوث الإسكان والبناء بخبرة عميقة في الهندسة الإنشائية.</p>
                 <span class="partner-role-tag">الاستشاري الإنشائي للمشروع</span>

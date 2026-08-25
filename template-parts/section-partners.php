@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Part: Strategic Engineering & Development Alliance (The 4 Titans)
- * Handcrafted Bespoke Human UI/UX matching exact Elementor Reference
+ * Concise Structured Information, Balanced Typography & Prestigious Icons
  *
  * @package District1
  */
@@ -13,17 +13,17 @@ $theme_uri = get_template_directory_uri();
         <div class="section-title-wrap text-center-wrap">
             <div class="section-badge luxury-badge-glow">
                 <span class="badge-dot-cyan-pulsing"></span>
-                <span>فريق قوي .. وراء كل نجاح رؤية</span>
+                <span>تحالف الكبار // وراء كل نجاح رؤية</span>
             </div>
             <h2 class="section-title luxury-main-title">
-                شركاء النجاح <span class="cyan-text">والتحالف الاستراتيجي وراء District 1</span>
+                التحالف الاستراتيجي <span class="cyan-text">وقلاع التطوير والهندسة لصرح District 1</span>
             </h2>
             <p class="section-desc luxury-sub-desc">
-                تحالف من كبرى قلاع التطوير العقاري والهندسة المعمارية والإنشائية والمقاولات العامة في مصر، لضمان أعلى معايير الجودة والالتزام الهندسي حتى التسليم في أكتوبر 2028.
+                تحالف من كبرى قلاع الاستثمار والاستشارات الهندسية والمقاولات العامة في مصر لضمان أعلى معايير الجودة حتى الافتتاح في أكتوبر 2028.
             </p>
         </div>
 
-        <!-- 4 Titans Exact Grid Matching Reference -->
+        <!-- 4 Titans Structured Showcase Grid -->
         <div class="partners-exact-showcase-grid">
             <!-- 1. EGR Real Estate (المطور العقاري) -->
             <div class="partner-bespoke-card">
@@ -35,12 +35,14 @@ $theme_uri = get_template_directory_uri();
                     </div>
 
                     <div class="partner-body-content">
-                        <span class="partner-role-badge">المطور العقاري والمستثمر الرئيسي</span>
-                        <h3 class="partner-main-heading">شركة المجموعة الاقتصادية للاستثمارات العقارية – EGR</h3>
+                        <span class="partner-role-badge">المطور والمستثمر الرئيسي</span>
+                        <h3 class="partner-main-heading">المجموعة الاقتصادية للاستثمارات (EGR)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            تعد من الأسماء الموثوقة في مجال التطوير العقاري بصعيد مصر. تأسست على يد <strong>السيد ياسر أحمد سليمـان</strong>، أحد أبرز المستثمرين في <strong>محافظة قنا</strong>، وقد بنت الشركة محفظة متنوعة تشمل قطاعات <strong>العقارات</strong> و<strong>الأغذية والمشروبات</strong>.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-user-tie"></i> <strong>القيادة:</strong> السيد ياسر أحمد سليمان (رائد الاستثمار بقنا).</li>
+                            <li><i class="fa-solid fa-chart-line"></i> <strong>المجال:</strong> ريادة التطوير العقاري والأغذية والمشروبات بالصعيد.</li>
+                            <li><i class="fa-solid fa-gem"></i> <strong>المسؤولية:</strong> التمويل الشامل، التطوير، وإدارة الأصول.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
@@ -48,13 +50,10 @@ $theme_uri = get_template_directory_uri();
                             <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
+                            <a href="https://www.instagram.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
@@ -73,11 +72,13 @@ $theme_uri = get_template_directory_uri();
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">الاستشاري العام والمصمم المعماري</span>
-                        <h3 class="partner-main-heading">شركة إم سي جي – مجموعة مروان للاستشارات</h3>
+                        <h3 class="partner-main-heading">مجموعة مروان للاستشارات الهندسية (MCG)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هي <strong>الاستشاري العام والمصمم المعماري</strong> للمشروع. تمتلك الشركة أكثر من <strong>أربعة عقود من الخبرة</strong> في مجالات <strong>العمارة، التصميم الداخلي، وإدارة المشروعات</strong>، مما جعلها اسماً موثوقاً في قطاع التصميم والتطوير العقاري في مصر. تأسست الشركة على يد <strong>المهندس المعماري طارق حسين</strong>.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-award"></i> <strong>الخبرة:</strong> أكثر من 40 عاماً في العمارة وإدارة المشروعات الكبرى.</li>
+                            <li><i class="fa-solid fa-compass-drafting"></i> <strong>المؤسس:</strong> المهندس المعماري طارق حسين.</li>
+                            <li><i class="fa-solid fa-cubes"></i> <strong>المسؤولية:</strong> التصميم المعماري الإبداعي وتوزيع المساحات الذكية.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
@@ -87,9 +88,6 @@ $theme_uri = get_template_directory_uri();
                             </a>
                             <a href="https://www.youtube.com/@mcgconsultants1" target="_blank" rel="noopener" class="social-circle-btn" aria-label="YouTube">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/mcg-consultant/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                             <a href="https://www.instagram.com/mcg_consultant/?hl=en" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
@@ -110,26 +108,25 @@ $theme_uri = get_template_directory_uri();
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">المقاول العام والتنفيذي</span>
-                        <h3 class="partner-main-heading">شركة الصعيد العامة للمقاولات والاستثمار العقاري – SCC</h3>
+                        <h3 class="partner-main-heading">شركة الصعيد العامة للمقاولات (SCC)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هي <strong>المقاول العام</strong> للمشروع. تأسست الشركة لتعمل في نطاق واسع يشمل <strong>أعمال المقاولات العامة والخاصة</strong>، بما في ذلك <strong>البنية التحتية والمرافق العامة والمصارف المغطاة</strong>. ويمتد نطاق خبرتها ليشمل <strong>إدارة واستخراج مواد البناء</strong>، وتشغيل <strong>المحاجر</strong>، وإنشاء <strong>المصانع والورش</strong> التي تدعم مشروعاتها أو تخدم أطرافاً أخرى.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-building-flag"></i> <strong>الكيان:</strong> إحدى قلاع المقاولات والبنية التحتية والمشروعات القومية.</li>
+                            <li><i class="fa-solid fa-truck-monster"></i> <strong>الإمكانيات:</strong> أسطول معدات ومحاجر ومصانع خرسانية كبرى.</li>
+                            <li><i class="fa-solid fa-helmet-safety"></i> <strong>المسؤولية:</strong> التنفيذ الإنشائي الميداني وضمان أسرع معدلات الإنجاز.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
                         <div class="partner-social-row">
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="X / Twitter">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
+                            <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Website">
+                                <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
                     </div>
@@ -148,26 +145,25 @@ $theme_uri = get_template_directory_uri();
 
                     <div class="partner-body-content">
                         <span class="partner-role-badge">الاستشاري الإنشائي الهندسي</span>
-                        <h3 class="partner-main-heading">مكتب سكن للاستشارات الهندسية</h3>
+                        <h3 class="partner-main-heading">مكتب سكن للاستشارات الهندسية (SAKAN)</h3>
                         
-                        <p class="partner-bio-paragraph">
-                            هو <strong>الاستشاري الإنشائي</strong> للمشروع. تأسس على يد <strong>الأستاذ الدكتور حداد سعيد حداد</strong>، أحد الخبراء المرموقين في <strong>المركز القومي لبحوث الإسكان والبناء</strong>، ويتميز المكتب بخبرة علمية وفنية عميقة في مجال الهندسة الإنشائية وتصميم الهياكل الخرسانية المقاومة للأحمال والزلازل.
-                        </p>
+                        <ul class="partner-key-bullets">
+                            <li><i class="fa-solid fa-graduation-cap"></i> <strong>القيادة:</strong> أ.د. حداد سعيد حداد (خبير المركز القومي للبحوث).</li>
+                            <li><i class="fa-solid fa-shield-halved"></i> <strong>التخصص:</strong> تصميم الهياكل الخرسانية المقاومة للأحمال والزلازل.</li>
+                            <li><i class="fa-solid fa-stamp"></i> <strong>المسؤولية:</strong> الحسابات الإنشائية الدقيقة وضبط الجودة وكود الأمان.</li>
+                        </ul>
                     </div>
 
                     <div class="partner-footer-social">
                         <div class="partner-social-row">
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
+                            <a href="https://wa.me/201040022670" target="_blank" rel="noopener" class="social-circle-btn" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/egr.invesments" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="X / Twitter">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
+                            <a href="https://district1-eg.com/" target="_blank" rel="noopener" class="social-circle-btn" aria-label="Website">
+                                <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
                     </div>
